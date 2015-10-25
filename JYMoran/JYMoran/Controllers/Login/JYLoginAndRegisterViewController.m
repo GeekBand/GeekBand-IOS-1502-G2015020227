@@ -6,13 +6,13 @@
 //  Copyright © 2015 JY. All rights reserved.
 //
 
-#import "LoginAndRegisterViewController.h"
+#import "JYLoginAndRegisterViewController.h"
 
-@interface LoginAndRegisterViewController ()
+@interface JYLoginAndRegisterViewController ()
 
 @end
 
-@implementation LoginAndRegisterViewController
+@implementation JYLoginAndRegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,8 +54,10 @@
 - (void)loginHandle {
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
-    NSString *gbid = @"id001";
-    NSLog(@"email:%@", email);
+    NSString *gbid = @"G2015020227";
+    
+    self.loginRequest = [[JYLoginRequest alloc]init];
+    [self.loginRequest sendLoginRequestWithEmail:email password:password gbid:gbid delegate:self];
 }
 
 - (IBAction)touchDownAction:(id)sender {
@@ -66,6 +68,18 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)loginRequestSuccess:(JYLoginRequest *)request user:(JYUserModel *)user {
+    if ([user.loginReturnMessage isEqualToString:@"Login success"]) {
+        NSLog(@"登录成功，现在转换页面");
+    } else {
+        NSLog(@"服务器错误:%@", user.loginReturnMessage);
+    }
+}
+
+- (void)loginRequestFailed:(JYLoginRequest *)request error:(NSError *)error {
+    NSLog(@"登录错误原因：%@", error);
 }
 
 @end

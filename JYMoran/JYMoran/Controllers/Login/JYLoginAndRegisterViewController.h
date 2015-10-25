@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JYLoginRequest.h"
+#import "JYUserModel.h"
 
-@interface LoginAndRegisterViewController : UIViewController<UITextFieldDelegate>
+@interface JYLoginAndRegisterViewController : UIViewController<UITextFieldDelegate, JYLoginRequestDelegate>
 
+@property (nonatomic, strong) JYLoginRequest *loginRequest;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 - (IBAction)loginButtonClicked:(id)sender;
