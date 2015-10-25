@@ -9,10 +9,9 @@
 #import "JYRegisterViewController.h"
 #import "JYRegisterRequest.h"
 
-@interface JYRegisterViewController () <JYRegisterRequestDeleage>
+@interface JYRegisterViewController () <UITextFieldDelegate, JYRegisterRequestDeleage>
 
 @property (nonatomic, strong) JYRegisterRequest *registerRequest;
-
 
 @end
 
@@ -20,6 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.registerButton.layer.cornerRadius = 5.0;
+    self.registerButton.clipsToBounds = YES;
+    
     self.userNameTextField.delegate = self;
     self.emailTextField.delegate = self;
     self.passwordTextField.delegate = self;
@@ -46,7 +49,6 @@
     NSString *userName = self.userNameTextField.text;
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
-    NSString *confirmPassword = self.confirmPasswordTextField.text;
     NSString *gbid = @"G2015020227";
     self.registerRequest = [[JYRegisterRequest alloc]init];
     [self.registerRequest sendRegisterRequestWithUserName:userName email:email password:password gbid:gbid delegate:self];
@@ -54,6 +56,10 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    
+    // restore postion of view
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
     return YES;
 }
 
@@ -90,6 +96,22 @@
     [self.emailTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
     [self.confirmPasswordTextField resignFirstResponder];
+    
+    // restore postion of view
+    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGRect frame = self.registerButton.frame;
+    int offset = frame.origin.y + 36 - (self.view.frame.size.height - 216); //keyboard height = 216
+    NSTimeInterval animationDuration = 0.30f;
+    [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+    [UIView setAnimationDuration:animationDuration];
+    
+    if (offset > 0) {
+        self.view.frame = CGRectMake(0, -offset, self.view.frame.size.width, self.view.frame.size.height);
+        [UIView commitAnimations];
+    }
 }
 
 #pragma Mark JYRegisterRequestDeleage
