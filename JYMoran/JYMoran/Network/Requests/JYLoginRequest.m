@@ -7,6 +7,7 @@
 //
 
 #import "JYLoginRequest.h"
+#import "JYLoginRequestParser.h"
 #import "BLMultipartForm.h"
 
 @implementation JYLoginRequest
@@ -51,6 +52,19 @@
     NSString *string = [[NSString alloc]initWithData:self.receivedData encoding:NSUTF8StringEncoding];
     NSLog(@"receive string:%@", string);
     
+    JYLoginRequestParser *parser = [[JYLoginRequestParser alloc]init];
+    JYUserModel *user = [parser parseJson:self.receivedData];
+    
+    if ([_delegate respondsToSelector:@selector(loginRequestSuccess:user:)]) {
+        [_delegate loginRequestSuccess:self user:user];
+    }
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"error: %@", error);
+    if ([_delegate respondsToSelector:@selector(loginRequestFailed:error:)]) {
+        [_delegate loginRequestFailed:self error:error];
+    }
 }
 
 @end

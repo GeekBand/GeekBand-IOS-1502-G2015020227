@@ -7,13 +7,41 @@
 //
 
 #import "AppDelegate.h"
+#import "JYMyViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UITabBarController *tabBarController;
 
 @end
 
 @implementation AppDelegate
 
+- (void)loadMainViewWithController:(UIViewController *)controller {
+    UIViewController *squareVC = [[UIViewController alloc]init];
+    UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
+    squareNav.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
+    squareNav.tabBarItem.title = @"广场";
+    squareNav.tabBarItem.image = [UIImage imageNamed:@"square"];
+    
+    UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"JYMy" bundle:[NSBundle mainBundle]];
+    JYMyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyViewController"];
+    myVC.tabBarItem.title = @"我的";
+    myVC.tabBarItem.image = [UIImage imageNamed:@"my"];
+    
+    self.tabBarController = [[UITabBarController alloc]init];
+    self.tabBarController.viewControllers = @[squareNav, myVC];
+    
+    [controller presentViewController:self.tabBarController animated:YES completion:nil];
+    
+    CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
+    
+    UIButton *photoButton = [[UIButton alloc]initWithFrame:CGRectMake(viewWidth/2-60, -25, 120, 50)];
+    [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
+    [self.tabBarController.tabBar addSubview:photoButton];
+}
+
+#pragma Mark App lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

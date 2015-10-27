@@ -18,6 +18,8 @@
 		D853BB691BD7D78600C1B6D0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D853BB681BD7D78600C1B6D0 /* Main.xcassets */; };
 		D853BB6C1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */; };
 		D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D853BB711BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m */; };
+		D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8826DDE1BDFADF200026474 /* JYMy.storyboard */; };
+		D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8826DE11BDFAE9600026474 /* JYMyViewController.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
 		D8E790CB1BD7D06D00C24F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790C91BD7D06D00C24F1F /* main.m */; };
 /* End PBXBuildFile section */
@@ -40,10 +42,12 @@
 		D83A77751BD3D04F0001D893 /* JYMoran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYMoran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D853BB661BD7D6A100C1B6D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D853BB681BD7D78600C1B6D0 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
-		D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYLoginAndRegister.storyboard; sourceTree = "<group>"; };
+		D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = JYLoginAndRegister.storyboard; path = ../Login/JYLoginAndRegister.storyboard; sourceTree = "<group>"; };
 		D853BB701BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginAndRegisterViewController.h; sourceTree = "<group>"; };
 		D853BB711BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLoginAndRegisterViewController.m; sourceTree = "<group>"; };
-		D8E790B71BD7CF8800C24F1F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8826DDE1BDFADF200026474 /* JYMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYMy.storyboard; sourceTree = "<group>"; };
+		D8826DE01BDFAE9600026474 /* JYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMyViewController.h; sourceTree = "<group>"; };
+		D8826DE11BDFAE9600026474 /* JYMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMyViewController.m; sourceTree = "<group>"; };
 		D8E790BD1BD7CF8800C24F1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E790C81BD7D06D00C24F1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 		D853BB601BD7D38600C1B6D0 /* My */ = {
 			isa = PBXGroup;
 			children = (
+				D8826DE01BDFAE9600026474 /* JYMyViewController.h */,
+				D8826DE11BDFAE9600026474 /* JYMyViewController.m */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -181,18 +187,9 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		D853BB6A1BD7D8F900C1B6D0 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		D8E790B51BD7CF8800C24F1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D853BB6A1BD7D8F900C1B6D0 /* Login */,
 				D8E790B61BD7CF8800C24F1F /* Storyboard */,
 			);
 			path = Views;
@@ -201,7 +198,8 @@
 		D8E790B61BD7CF8800C24F1F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				D8E790B71BD7CF8800C24F1F /* LaunchScreen.storyboard */,
+				D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */,
+				D8826DDE1BDFADF200026474 /* JYMy.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -321,6 +319,7 @@
 				D853BB6C1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard in Resources */,
 				D853BB691BD7D78600C1B6D0 /* Main.xcassets in Resources */,
 				D853BB671BD7D6A100C1B6D0 /* Images.xcassets in Resources */,
+				D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +337,7 @@
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
 				D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */,
 				D81417DD1BDC8C5700819469 /* JYRegisterViewController.m in Sources */,
+				D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */,
 				D8E790CB1BD7D06D00C24F1F /* main.m in Sources */,
 				D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
