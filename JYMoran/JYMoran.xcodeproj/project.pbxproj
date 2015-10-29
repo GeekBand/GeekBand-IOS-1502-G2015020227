@@ -18,6 +18,7 @@
 		D853BB691BD7D78600C1B6D0 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D853BB681BD7D78600C1B6D0 /* Main.xcassets */; };
 		D853BB6C1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */; };
 		D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D853BB711BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m */; };
+		D86B07941BE24C350028744F /* JYGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = D86B07931BE24C350028744F /* JYGlobal.m */; };
 		D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8826DDE1BDFADF200026474 /* JYMy.storyboard */; };
 		D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8826DE11BDFAE9600026474 /* JYMyViewController.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 		D853BB6B1BD7D93100C1B6D0 /* JYLoginAndRegister.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = JYLoginAndRegister.storyboard; path = ../Login/JYLoginAndRegister.storyboard; sourceTree = "<group>"; };
 		D853BB701BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginAndRegisterViewController.h; sourceTree = "<group>"; };
 		D853BB711BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLoginAndRegisterViewController.m; sourceTree = "<group>"; };
+		D86B07921BE24C350028744F /* JYGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYGlobal.h; sourceTree = "<group>"; };
+		D86B07931BE24C350028744F /* JYGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYGlobal.m; sourceTree = "<group>"; };
 		D8826DDE1BDFADF200026474 /* JYMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYMy.storyboard; sourceTree = "<group>"; };
 		D8826DE01BDFAE9600026474 /* JYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMyViewController.h; sourceTree = "<group>"; };
 		D8826DE11BDFAE9600026474 /* JYMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMyViewController.m; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 			children = (
 				D8E790BC1BD7CF8800C24F1F /* App */,
 				D8E790B91BD7CF8800C24F1F /* Controllers */,
+				D86B07911BE24BE50028744F /* Globals */,
 				D8E790C01BD7CF8800C24F1F /* Libary */,
 				D8E790C21BD7CF8800C24F1F /* Models */,
 				D81417CB1BDA798800819469 /* Network */,
@@ -185,6 +189,15 @@
 				D81417DC1BDC8C5700819469 /* JYRegisterViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D86B07911BE24BE50028744F /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				D86B07921BE24C350028744F /* JYGlobal.h */,
+				D86B07931BE24C350028744F /* JYGlobal.m */,
+			);
+			path = Globals;
 			sourceTree = "<group>";
 		};
 		D8E790B51BD7CF8800C24F1F /* Views */ = {
@@ -331,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81417DA1BDA890000819469 /* JYLoginRequestParser.m in Sources */,
+				D86B07941BE24C350028744F /* JYGlobal.m in Sources */,
 				D81417D71BDA815700819469 /* BLMultipartForm.m in Sources */,
 				D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */,
 				D81417E01BDCC2CE00819469 /* JYRegisterRequest.m in Sources */,

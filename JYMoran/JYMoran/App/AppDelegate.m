@@ -18,14 +18,15 @@
 @implementation AppDelegate
 
 - (void)loadMainViewWithController:(UIViewController *)controller {
+    UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"JYMy" bundle:[NSBundle mainBundle]];
+    
     UIViewController *squareVC = [[UIViewController alloc]init];
     UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
     squareNav.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
     squareNav.tabBarItem.title = @"广场";
     squareNav.tabBarItem.image = [UIImage imageNamed:@"square"];
     
-    UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"JYMy" bundle:[NSBundle mainBundle]];
-    JYMyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyViewController"];
+    JYMyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyStoryboard"];
     myVC.tabBarItem.title = @"我的";
     myVC.tabBarItem.image = [UIImage imageNamed:@"my"];
     

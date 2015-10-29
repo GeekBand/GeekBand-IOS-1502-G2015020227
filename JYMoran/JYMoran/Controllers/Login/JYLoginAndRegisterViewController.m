@@ -8,6 +8,7 @@
 
 #import "JYLoginAndRegisterViewController.h"
 #import "AppDelegate.h"
+#import "JYGlobal.h"
 
 @interface JYLoginAndRegisterViewController ()
 
@@ -76,6 +77,7 @@
         NSLog(@"登录成功，现在转换页面");
         AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [appDelegate loadMainViewWithController:self];
+        [JYGlobal shareGlobal].user = user;
     } else {
         NSLog(@"服务器错误:%@", user.loginReturnMessage);
     }
