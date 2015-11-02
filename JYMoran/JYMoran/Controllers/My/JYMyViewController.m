@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:237 green:127/255.0f blue:74/255.0f alpha:1.0f];
+    self.headImageView.layer.cornerRadius = self.headImageView.frame.size.width / 2.0f;
+    self.headImageView.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {

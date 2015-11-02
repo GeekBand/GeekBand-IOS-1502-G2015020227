@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface JYMyViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
 
 @end
