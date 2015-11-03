@@ -21,6 +21,8 @@
 		D86B07941BE24C350028744F /* JYGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = D86B07931BE24C350028744F /* JYGlobal.m */; };
 		D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8826DDE1BDFADF200026474 /* JYMy.storyboard */; };
 		D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8826DE11BDFAE9600026474 /* JYMyViewController.m */; };
+		D8B1F5E91BE8E1090078A932 /* JYNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5E81BE8E1090078A932 /* JYNickNameViewController.m */; };
+		D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5EB1BE8E1D90078A932 /* JYHeadImageViewController.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
 		D8E790CB1BD7D06D00C24F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790C91BD7D06D00C24F1F /* main.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,10 @@
 		D8826DDE1BDFADF200026474 /* JYMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYMy.storyboard; sourceTree = "<group>"; };
 		D8826DE01BDFAE9600026474 /* JYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMyViewController.h; sourceTree = "<group>"; };
 		D8826DE11BDFAE9600026474 /* JYMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMyViewController.m; sourceTree = "<group>"; };
+		D8B1F5E71BE8E1090078A932 /* JYNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYNickNameViewController.h; sourceTree = "<group>"; };
+		D8B1F5E81BE8E1090078A932 /* JYNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYNickNameViewController.m; sourceTree = "<group>"; };
+		D8B1F5EA1BE8E1D90078A932 /* JYHeadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHeadImageViewController.h; sourceTree = "<group>"; };
+		D8B1F5EB1BE8E1D90078A932 /* JYHeadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYHeadImageViewController.m; sourceTree = "<group>"; };
 		D8E790BD1BD7CF8800C24F1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E790C81BD7D06D00C24F1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +182,10 @@
 			children = (
 				D8826DE01BDFAE9600026474 /* JYMyViewController.h */,
 				D8826DE11BDFAE9600026474 /* JYMyViewController.m */,
+				D8B1F5E71BE8E1090078A932 /* JYNickNameViewController.h */,
+				D8B1F5E81BE8E1090078A932 /* JYNickNameViewController.m */,
+				D8B1F5EA1BE8E1D90078A932 /* JYHeadImageViewController.h */,
+				D8B1F5EB1BE8E1D90078A932 /* JYHeadImageViewController.m */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -344,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81417DA1BDA890000819469 /* JYLoginRequestParser.m in Sources */,
+				D8B1F5E91BE8E1090078A932 /* JYNickNameViewController.m in Sources */,
 				D86B07941BE24C350028744F /* JYGlobal.m in Sources */,
 				D81417D71BDA815700819469 /* BLMultipartForm.m in Sources */,
 				D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */,
@@ -355,6 +366,7 @@
 				D8E790CB1BD7D06D00C24F1F /* main.m in Sources */,
 				D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
+				D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

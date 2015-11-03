@@ -118,7 +118,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Lc-LOS">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Lc-LOS">
                                                     <rect key="frame" x="8" y="11" width="101" height="22"/>
                                                     <animations/>
                                                     <state key="normal" image="nickname">
@@ -137,6 +137,9 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="yc4-Lc-LOS" firstAttribute="leading" secondItem="YTs-TN-Unu" secondAttribute="leading" constant="8" id="itd-in-WCN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -147,10 +150,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-D6-z9x">
-                                                    <rect key="frame" x="34" y="7" width="46" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-D6-z9x">
+                                                    <rect key="frame" x="8" y="9" width="96" height="25"/>
                                                     <animations/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" image="headimage">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="设置头像">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="PHF-Fv-wtr" kind="show" identifier="settingHeadImage" id="Rtd-mu-ur6"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -163,40 +180,107 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXZ-9D-QTF" id="60e-kV-Jx5">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-sg-XTq">
+                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                    <animations/>
+                                                    <state key="normal" image="signout">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="注销登录">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="Cud-5L-cxK">
+                            <tableViewSection id="Cud-5L-cxK">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pZ5-Kg-REF">
-                                        <rect key="frame" x="0.0" y="374" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="346" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pZ5-Kg-REF" id="YrO-sf-5cu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-Ms-lU5">
+                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                    <animations/>
+                                                    <state key="normal" image="rate">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="评价我们">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TR3-Kc-zSz">
-                                        <rect key="frame" x="0.0" y="418" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="390" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TR3-Kc-zSz" id="H6j-Q7-bd2">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-dN-AYt">
+                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                    <animations/>
+                                                    <state key="normal" image="followus">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="关注我们">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tb9-Vq-iwp">
-                                        <rect key="frame" x="0.0" y="462" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="434" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tb9-Vq-iwp" id="UN5-7G-g6e">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-ni-9yf">
+                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                    <animations/>
+                                                    <state key="normal" image="homepage">
+                                                        <attributedString key="attributedTitle">
+                                                            <fragment content="官方网站">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="mUN-BG-by0" kind="show" id="F6c-0n-tjm"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -223,7 +307,7 @@
         <!--更改昵称-->
         <scene sceneID="2fx-b6-1rZ">
             <objects>
-                <viewController id="hKq-zF-cWm" sceneMemberID="viewController">
+                <viewController id="hKq-zF-cWm" customClass="JYNickNameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LMP-G7-P0c"/>
                         <viewControllerLayoutGuide type="bottom" id="hkZ-iz-BwN"/>
@@ -256,6 +340,84 @@
             </objects>
             <point key="canvasLocation" x="1302" y="-212"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7D1-sG-QAr">
+            <objects>
+                <viewController id="mUN-BG-by0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IwU-iK-AiC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ke6-Ju-l2r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ap-Jf-uei">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-3O-AqX">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fbJ-3O-AqX" secondAttribute="trailing" id="3yQ-VK-14y"/>
+                            <constraint firstItem="fbJ-3O-AqX" firstAttribute="top" secondItem="IwU-iK-AiC" secondAttribute="bottom" id="aKJ-f3-2Yo"/>
+                            <constraint firstItem="fbJ-3O-AqX" firstAttribute="leading" secondItem="7ap-Jf-uei" secondAttribute="leading" id="rNv-n6-vt7"/>
+                            <constraint firstItem="ke6-Ju-l2r" firstAttribute="top" secondItem="fbJ-3O-AqX" secondAttribute="bottom" id="uh9-T3-73O"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vP0-XD-dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="535"/>
+        </scene>
+        <!--设置头像-->
+        <scene sceneID="tXp-vm-s5W">
+            <objects>
+                <viewController id="PHF-Fv-wtr" customClass="JYHeadImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k9x-fn-uZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9l-C8-Iql"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vv0-Ma-DNd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-aU-YPG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="409"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-3R-bLe">
+                                <rect key="frame" x="20" y="481" width="280" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="更改头像">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cka-3R-bLe" firstAttribute="leading" secondItem="vv0-Ma-DNd" secondAttribute="leading" constant="20" id="4IK-8i-U8A"/>
+                            <constraint firstAttribute="trailing" secondItem="Cka-3R-bLe" secondAttribute="trailing" constant="20" id="7vT-f1-qxs"/>
+                            <constraint firstAttribute="trailing" secondItem="hM7-aU-YPG" secondAttribute="trailing" id="adF-F2-6Ne"/>
+                            <constraint firstItem="hM7-aU-YPG" firstAttribute="top" secondItem="k9x-fn-uZb" secondAttribute="bottom" id="qkr-aF-Qh3"/>
+                            <constraint firstItem="hM7-aU-YPG" firstAttribute="leading" secondItem="vv0-Ma-DNd" secondAttribute="leading" id="rY9-8q-xhG"/>
+                            <constraint firstItem="Cka-3R-bLe" firstAttribute="top" secondItem="hM7-aU-YPG" secondAttribute="bottom" constant="8" id="rhJ-B7-SeT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置头像" id="2si-MB-uoX">
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="0Fw-bK-5lF"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIS-99-CgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="535"/>
+        </scene>
         <!--MyNav-->
         <scene sceneID="swl-5I-qqn">
             <objects>
@@ -284,9 +446,13 @@
     </scenes>
     <resources>
         <image name="background" width="320" height="128"/>
+        <image name="followus" width="22" height="22"/>
         <image name="headimage" width="22" height="22"/>
+        <image name="homepage" width="22" height="22"/>
         <image name="my" width="22" height="22"/>
         <image name="nickname" width="22" height="22"/>
+        <image name="rate" width="22" height="22"/>
+        <image name="signout" width="22" height="22"/>
         <image name="square" width="22" height="22"/>
     </resources>
 </document>
