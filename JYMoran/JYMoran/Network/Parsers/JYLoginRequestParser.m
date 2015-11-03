@@ -19,12 +19,29 @@
         NSLog(@"Error in JYLoginRequestParser.parseJson");
     } else {
         if ([[jsonDic class] isSubclassOfClass:[NSDictionary class]]) {
+            JYUserModel *user = [[JYUserModel alloc]init];
             id returnMessage = [jsonDic valueForKey:@"message"];
             if ([[returnMessage class] isSubclassOfClass:[NSString class]]) {
-                JYUserModel *user = [[JYUserModel alloc]init];
                 user.loginReturnMessage = returnMessage;
-                return user;
             }
+            id data = [jsonDic valueForKey:@"data"];
+            if ([[data class] isSubclassOfClass:[NSDictionary class]]) {
+                id userId = [data valueForKey:@"user_id"];
+                if ([[userId class] isSubclassOfClass:[NSString class]]) {
+                    user.userId = userId;
+                }
+                
+                id token = [data valueForKey:@"token"];
+                if ([[token class] isSubclassOfClass:[NSString class]]) {
+                    user.token = token;
+                }
+                
+                id userName = [data valueForKey:@"user_name"];
+                if ([[userName class] isSubclassOfClass:[NSString class]]) {
+                    user.username = userName;
+                }
+            }
+            return user;
         }
     }
     

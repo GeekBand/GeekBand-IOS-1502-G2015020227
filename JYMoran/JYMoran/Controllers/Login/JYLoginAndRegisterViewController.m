@@ -78,6 +78,7 @@
         AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [appDelegate loadMainViewWithController:self];
         [JYGlobal shareGlobal].user = user;
+        [JYGlobal shareGlobal].user.email = self.emailTextField.text;
     } else {
         NSLog(@"服务器错误:%@", user.loginReturnMessage);
     }

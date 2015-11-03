@@ -340,10 +340,10 @@
             </objects>
             <point key="canvasLocation" x="1302" y="-212"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="7D1-sG-QAr">
             <objects>
-                <viewController id="mUN-BG-by0" sceneMemberID="viewController">
+                <viewController id="mUN-BG-by0" customClass="JYHomePageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IwU-iK-AiC"/>
                         <viewControllerLayoutGuide type="bottom" id="ke6-Ju-l2r"/>
@@ -368,6 +368,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="fbJ-3O-AqX" id="3Gk-7Y-VM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vP0-XD-dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
