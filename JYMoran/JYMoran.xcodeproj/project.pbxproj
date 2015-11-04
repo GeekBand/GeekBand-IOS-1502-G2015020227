@@ -24,6 +24,8 @@
 		D8B1F5E91BE8E1090078A932 /* JYNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5E81BE8E1090078A932 /* JYNickNameViewController.m */; };
 		D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5EB1BE8E1D90078A932 /* JYHeadImageViewController.m */; };
 		D8B1F5EF1BE8FA360078A932 /* JYHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5EE1BE8FA360078A932 /* JYHomePageViewController.m */; };
+		D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5F11BEA41E50078A932 /* JYGetImage.m */; };
+		D8B1F5F51BEA4F690078A932 /* JYEditNickNameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
 		D8E790CB1BD7D06D00C24F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790C91BD7D06D00C24F1F /* main.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,10 @@
 		D8B1F5EB1BE8E1D90078A932 /* JYHeadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYHeadImageViewController.m; sourceTree = "<group>"; };
 		D8B1F5ED1BE8FA360078A932 /* JYHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYHomePageViewController.h; sourceTree = "<group>"; };
 		D8B1F5EE1BE8FA360078A932 /* JYHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYHomePageViewController.m; sourceTree = "<group>"; };
+		D8B1F5F01BEA41E50078A932 /* JYGetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYGetImage.h; sourceTree = "<group>"; };
+		D8B1F5F11BEA41E50078A932 /* JYGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYGetImage.m; sourceTree = "<group>"; };
+		D8B1F5F31BEA4F690078A932 /* JYEditNickNameRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYEditNickNameRequest.h; sourceTree = "<group>"; };
+		D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYEditNickNameRequest.m; sourceTree = "<group>"; };
 		D8E790BD1BD7CF8800C24F1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E790C81BD7D06D00C24F1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				D81417D01BDA7A1C00819469 /* JYLoginRequest.m */,
 				D81417DE1BDCC2CE00819469 /* JYRegisterRequest.h */,
 				D81417DF1BDCC2CE00819469 /* JYRegisterRequest.m */,
+				D8B1F5F01BEA41E50078A932 /* JYGetImage.h */,
+				D8B1F5F11BEA41E50078A932 /* JYGetImage.m */,
+				D8B1F5F31BEA4F690078A932 /* JYEditNickNameRequest.h */,
+				D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -363,6 +373,7 @@
 				D86B07941BE24C350028744F /* JYGlobal.m in Sources */,
 				D81417D71BDA815700819469 /* BLMultipartForm.m in Sources */,
 				D8B1F5EF1BE8FA360078A932 /* JYHomePageViewController.m in Sources */,
+				D8B1F5F51BEA4F690078A932 /* JYEditNickNameRequest.m in Sources */,
 				D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */,
 				D81417E01BDCC2CE00819469 /* JYRegisterRequest.m in Sources */,
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
@@ -371,6 +382,7 @@
 				D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */,
 				D8E790CB1BD7D06D00C24F1F /* main.m in Sources */,
 				D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */,
+				D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
 				D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */,
 			);

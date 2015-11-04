@@ -296,6 +296,7 @@
                     <navigationItem key="navigationItem" title="我的" id="Ymd-zG-ebZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="emailLabel" destination="6Sq-G1-yxH" id="QoL-SW-6gE"/>
                         <outlet property="headImageView" destination="7VJ-ar-2Cr" id="Dmh-Ek-dHY"/>
                         <outlet property="nickNameLabel" destination="5vi-Yk-LXm" id="Gs3-uA-rOI"/>
                     </connections>
@@ -332,9 +333,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="更改昵称" id="oyx-9c-fmv">
-                        <barButtonItem key="rightBarButtonItem" title="确定" id="jDa-hi-OoZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="jDa-hi-OoZ">
+                            <connections>
+                                <action selector="doneBarButtonClicked:" destination="hKq-zF-cWm" id="baG-Ch-vrW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nickNameTextField" destination="tlA-Ky-efT" id="fyg-UT-cc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcp-Ir-gJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,14 +396,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-aU-YPG">
-                                <rect key="frame" x="0.0" y="64" width="320" height="409"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hM7-aU-YPG">
+                                <rect key="frame" x="0.0" y="64" width="320" height="383"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-3R-bLe">
-                                <rect key="frame" x="20" y="481" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cka-3R-bLe">
+                                <rect key="frame" x="20" y="455" width="280" height="34"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.41568627450000001" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="更改头像">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -407,6 +416,7 @@
                             <constraint firstItem="Cka-3R-bLe" firstAttribute="leading" secondItem="vv0-Ma-DNd" secondAttribute="leading" constant="20" id="4IK-8i-U8A"/>
                             <constraint firstAttribute="trailing" secondItem="Cka-3R-bLe" secondAttribute="trailing" constant="20" id="7vT-f1-qxs"/>
                             <constraint firstAttribute="trailing" secondItem="hM7-aU-YPG" secondAttribute="trailing" id="adF-F2-6Ne"/>
+                            <constraint firstItem="r9l-C8-Iql" firstAttribute="top" secondItem="Cka-3R-bLe" secondAttribute="bottom" constant="30" id="nri-q4-zh0"/>
                             <constraint firstItem="hM7-aU-YPG" firstAttribute="top" secondItem="k9x-fn-uZb" secondAttribute="bottom" id="qkr-aF-Qh3"/>
                             <constraint firstItem="hM7-aU-YPG" firstAttribute="leading" secondItem="vv0-Ma-DNd" secondAttribute="leading" id="rY9-8q-xhG"/>
                             <constraint firstItem="Cka-3R-bLe" firstAttribute="top" secondItem="hM7-aU-YPG" secondAttribute="bottom" constant="8" id="rhJ-B7-SeT"/>

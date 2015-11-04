@@ -9,6 +9,7 @@
 #import "JYLoginAndRegisterViewController.h"
 #import "AppDelegate.h"
 #import "JYGlobal.h"
+#import "JYGetImage.h"
 
 @interface JYLoginAndRegisterViewController ()
 
@@ -79,6 +80,8 @@
         [appDelegate loadMainViewWithController:self];
         [JYGlobal shareGlobal].user = user;
         [JYGlobal shareGlobal].user.email = self.emailTextField.text;
+        JYGetImage *getImage = [[JYGetImage alloc]init];
+        [getImage sendGetImageRequest];
     } else {
         NSLog(@"服务器错误:%@", user.loginReturnMessage);
     }

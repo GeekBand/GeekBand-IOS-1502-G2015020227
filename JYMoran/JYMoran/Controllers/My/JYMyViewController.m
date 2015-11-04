@@ -7,6 +7,7 @@
 //
 
 #import "JYMyViewController.h"
+#import "JYGlobal.h"
 
 @interface JYMyViewController ()
 
@@ -19,6 +20,13 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:237 green:127/255.0f blue:74/255.0f alpha:1.0f];
     self.headImageView.layer.cornerRadius = self.headImageView.frame.size.width / 2.0f;
     self.headImageView.clipsToBounds = YES;
+}
+
+// need by reload everytime
+- (void)viewDidAppear:(BOOL)animated {
+    self.nickNameLabel.text = [JYGlobal shareGlobal].user.username;
+    self.headImageView.image = [JYGlobal shareGlobal].user.image;
+    self.emailLabel.text = [JYGlobal shareGlobal].user.email;
 }
 
 - (void)didReceiveMemoryWarning {

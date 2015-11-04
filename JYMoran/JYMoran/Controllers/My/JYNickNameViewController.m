@@ -7,6 +7,7 @@
 //
 
 #import "JYNickNameViewController.h"
+#import "JYGlobal.h"
 
 @implementation JYNickNameViewController
 
@@ -30,4 +31,13 @@
  }
  */
 
+- (IBAction)doneBarButtonClicked:(id)sender {
+    JYEditNickNameRequest *request = [[JYEditNickNameRequest alloc]init];
+    [request sendEditNickNameRequest:self.nickNameTextField.text delegate:self];
+}
+
+- (void)editNickNameRequestSuccess:(JYEditNickNameRequest *)request {
+    [JYGlobal shareGlobal].user.username = self.nickNameTextField.text;
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

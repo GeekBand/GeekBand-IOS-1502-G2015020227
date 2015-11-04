@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JYEditNickNameRequest.h"
 
-@interface JYNickNameViewController : UIViewController
+@interface JYNickNameViewController : UIViewController<JYEditNickNameRequestDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *nickNameTextField;
+@property (nonatomic, weak) NSString *nickName;
+- (IBAction)doneBarButtonClicked:(id)sender;
 
 @end
