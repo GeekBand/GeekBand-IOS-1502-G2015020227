@@ -21,6 +21,9 @@
     [super viewDidLoad];
     self.emailTextField.delegate = self;
     self.passwordTextField.delegate = self;
+    
+    self.emailTextField.text = @"joeyu@live.cn";
+    self.passwordTextField.text = @"123456";
 }
 
 - (void)didReceiveMemoryWarning {

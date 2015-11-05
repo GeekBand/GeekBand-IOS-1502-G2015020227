@@ -8,6 +8,8 @@
 
 #import "JYMyViewController.h"
 #import "JYGlobal.h"
+#import "AppDelegate.h"
+#import "JYHeadImageViewController.h"
 
 @interface JYMyViewController ()
 
@@ -43,5 +45,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0 && indexPath.row == 2) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"确定注销吗?" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *enterAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+            [JYGlobal shareGlobal].user = nil;
+            AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            [appDelegate loadLoginView];
+        }];
+        
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:enterAction];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end

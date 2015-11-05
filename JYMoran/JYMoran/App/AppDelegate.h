@@ -13,6 +13,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 - (void)loadMainViewWithController:(UIViewController *)controller;
+- (void)loadLoginView;
 
 @end
 

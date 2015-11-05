@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/Controllers/Login/JYLoginAndRegisterViewController.m"
-            timestampString = "468339718.069512"
+            timestampString = "468427100.508246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-loginRequestSuccess:user:"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/App/AppDelegate.m"
-            timestampString = "468164583.362105"
+            timestampString = "468426947.792223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "-loadMainViewWithController:"
             landmarkType = "5">
          </BreakpointContent>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JYMyViewController : UITableViewController
+@interface JYMyViewController : UITableViewController<UIActionSheetDelegate, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nickNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;

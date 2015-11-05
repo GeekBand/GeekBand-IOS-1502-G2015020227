@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JYLoginAndRegisterViewController.h"
 #import "JYMyViewController.h"
 
 @interface AppDelegate ()
@@ -41,6 +42,12 @@
     UIButton *photoButton = [[UIButton alloc]initWithFrame:CGRectMake(viewWidth/2-60, -25, 120, 50)];
     [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
     [self.tabBarController.tabBar addSubview:photoButton];
+}
+
+- (void)loadLoginView {
+    UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"JYLoginAndRegister" bundle:[NSBundle mainBundle]];
+    JYLoginAndRegisterViewController *loginController = [loginStoryboard instantiateViewControllerWithIdentifier:@"LoginStoryboard"];
+    [loginController presentViewController:loginController animated:YES completion:nil];
 }
 
 #pragma Mark App lifecycle

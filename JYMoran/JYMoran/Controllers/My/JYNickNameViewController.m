@@ -40,4 +40,9 @@
     [JYGlobal shareGlobal].user.username = self.nickNameTextField.text;
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)editNickNameRequestFailed:(JYEditNickNameRequest *)request error:(NSError *)error {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

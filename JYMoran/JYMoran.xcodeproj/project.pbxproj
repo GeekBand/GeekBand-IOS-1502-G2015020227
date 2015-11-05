@@ -26,6 +26,7 @@
 		D8B1F5EF1BE8FA360078A932 /* JYHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5EE1BE8FA360078A932 /* JYHomePageViewController.m */; };
 		D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5F11BEA41E50078A932 /* JYGetImage.m */; };
 		D8B1F5F51BEA4F690078A932 /* JYEditNickNameRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */; };
+		D8BC29E71BEB7FD000F71CCA /* JYEditImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BC29E61BEB7FD000F71CCA /* JYEditImageRequest.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
 		D8E790CB1BD7D06D00C24F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790C91BD7D06D00C24F1F /* main.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,8 @@
 		D8B1F5F11BEA41E50078A932 /* JYGetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYGetImage.m; sourceTree = "<group>"; };
 		D8B1F5F31BEA4F690078A932 /* JYEditNickNameRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYEditNickNameRequest.h; sourceTree = "<group>"; };
 		D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYEditNickNameRequest.m; sourceTree = "<group>"; };
+		D8BC29E51BEB7FD000F71CCA /* JYEditImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYEditImageRequest.h; sourceTree = "<group>"; };
+		D8BC29E61BEB7FD000F71CCA /* JYEditImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYEditImageRequest.m; sourceTree = "<group>"; };
 		D8E790BD1BD7CF8800C24F1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E790C81BD7D06D00C24F1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				D8B1F5F11BEA41E50078A932 /* JYGetImage.m */,
 				D8B1F5F31BEA4F690078A932 /* JYEditNickNameRequest.h */,
 				D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */,
+				D8BC29E51BEB7FD000F71CCA /* JYEditImageRequest.h */,
+				D8BC29E61BEB7FD000F71CCA /* JYEditImageRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				D8B1F5F51BEA4F690078A932 /* JYEditNickNameRequest.m in Sources */,
 				D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */,
 				D81417E01BDCC2CE00819469 /* JYRegisterRequest.m in Sources */,
+				D8BC29E71BEB7FD000F71CCA /* JYEditImageRequest.m in Sources */,
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
 				D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */,
 				D81417DD1BDC8C5700819469 /* JYRegisterViewController.m in Sources */,

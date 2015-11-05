@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JYEditImageRequest.h"
 
-@interface JYHeadImageViewController : UIViewController
+@interface JYHeadImageViewController : UIViewController<JYEditImageRequestDelegate, UIImagePickerControllerDelegate>
+- (IBAction)doneButtonClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+@property (strong, nonatomic) UIImagePickerController *pickerController;
+- (IBAction)editHeadImageClicked:(id)sender;
 
 @end

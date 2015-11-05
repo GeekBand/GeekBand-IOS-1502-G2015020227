@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Square-->
@@ -118,8 +119,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Lc-LOS">
-                                                    <rect key="frame" x="8" y="11" width="101" height="22"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Lc-LOS">
+                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="nickname">
                                                         <attributedString key="attributedTitle">
@@ -139,6 +140,7 @@
                                             <animations/>
                                             <constraints>
                                                 <constraint firstItem="yc4-Lc-LOS" firstAttribute="leading" secondItem="YTs-TN-Unu" secondAttribute="leading" constant="8" id="itd-in-WCN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yc4-Lc-LOS" secondAttribute="trailing" id="zjr-FO-EFf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -150,8 +152,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-D6-z9x">
-                                                    <rect key="frame" x="8" y="9" width="96" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-D6-z9x">
+                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="headimage">
                                                         <attributedString key="attributedTitle">
@@ -171,6 +173,10 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="WYv-D6-z9x" firstAttribute="leading" secondItem="gTu-eL-obi" secondAttribute="leadingMargin" id="aqB-PT-X6e"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="WYv-D6-z9x" secondAttribute="trailing" id="tct-Lj-mkI"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -181,8 +187,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-sg-XTq">
-                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-sg-XTq">
+                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="signout">
                                                         <attributedString key="attributedTitle">
@@ -197,6 +203,10 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3k5-sg-XTq" secondAttribute="trailing" id="X2T-9E-wsv"/>
+                                                <constraint firstItem="3k5-sg-XTq" firstAttribute="leading" secondItem="60e-kV-Jx5" secondAttribute="leadingMargin" id="jnV-NP-UiD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -211,8 +221,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-Ms-lU5">
-                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-Ms-lU5">
+                                                    <rect key="frame" x="8" y="8" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="rate">
                                                         <attributedString key="attributedTitle">
@@ -227,6 +237,10 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="HrF-Ms-lU5" firstAttribute="leading" secondItem="YrO-sf-5cu" secondAttribute="leadingMargin" id="VoC-vc-Q82"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HrF-Ms-lU5" secondAttribute="trailing" id="cVf-Ny-UlK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -237,8 +251,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-dN-AYt">
-                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-dN-AYt">
+                                                    <rect key="frame" x="8" y="8" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="followus">
                                                         <attributedString key="attributedTitle">
@@ -253,6 +267,10 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="BDK-dN-AYt" firstAttribute="leading" secondItem="H6j-Q7-bd2" secondAttribute="leadingMargin" id="aHh-jU-4BA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BDK-dN-AYt" secondAttribute="trailing" id="iyw-Z6-zIe"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -263,8 +281,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-ni-9yf">
-                                                    <rect key="frame" x="8" y="9" width="94" height="25"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-ni-9yf">
+                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
                                                     <animations/>
                                                     <state key="normal" image="homepage">
                                                         <attributedString key="attributedTitle">
@@ -282,6 +300,10 @@
                                                 </button>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fvI-ni-9yf" secondAttribute="trailing" id="FaB-uA-ldc"/>
+                                                <constraint firstItem="fvI-ni-9yf" firstAttribute="leading" secondItem="UN5-7G-g6e" secondAttribute="leadingMargin" id="b1h-5Q-bKg"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
@@ -387,7 +409,7 @@
         <!--设置头像-->
         <scene sceneID="tXp-vm-s5W">
             <objects>
-                <viewController id="PHF-Fv-wtr" customClass="JYHeadImageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HeadImageStoryboard" id="PHF-Fv-wtr" customClass="JYHeadImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k9x-fn-uZb"/>
                         <viewControllerLayoutGuide type="bottom" id="r9l-C8-Iql"/>
@@ -408,6 +430,9 @@
                                 <state key="normal" title="更改头像">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="editHeadImageClicked:" destination="PHF-Fv-wtr" eventType="touchUpInside" id="cn6-J1-8a9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -423,9 +448,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="设置头像" id="2si-MB-uoX">
-                        <barButtonItem key="rightBarButtonItem" title="确定" id="0Fw-bK-5lF"/>
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="0Fw-bK-5lF">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="PHF-Fv-wtr" id="110-ra-dBX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="headImageView" destination="hM7-aU-YPG" id="gLQ-n5-MJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIS-99-CgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
