@@ -47,7 +47,7 @@
 - (void)loadLoginView {
     UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"JYLoginAndRegister" bundle:[NSBundle mainBundle]];
     JYLoginAndRegisterViewController *loginController = [loginStoryboard instantiateViewControllerWithIdentifier:@"LoginStoryboard"];
-    [loginController presentViewController:loginController animated:YES completion:nil];
+    [loginController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma Mark App lifecycle

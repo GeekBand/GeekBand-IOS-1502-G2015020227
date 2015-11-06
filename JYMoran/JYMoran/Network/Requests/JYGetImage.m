@@ -14,12 +14,13 @@
 - (void)sendGetImageRequest {
     [self.urlConnection cancel];
     
+    
     NSString *urlString = @"http://moran.chinacloudapp.cn/moran/web/user/show";
     urlString = [NSString stringWithFormat:@"%@?user_id=%@", urlString, [JYGlobal shareGlobal].user.userId];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url];
     request.HTTPMethod = @"GET";
-    self.urlConnection = [[NSURLConnection alloc]initWithRequest:request delegate:nil startImmediately:YES];
+    self.urlConnection = [[NSURLConnection alloc]initWithRequest:request delegate:self startImmediately:YES];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {

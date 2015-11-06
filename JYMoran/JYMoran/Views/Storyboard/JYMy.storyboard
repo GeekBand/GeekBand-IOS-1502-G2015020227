@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Square-->
@@ -112,200 +111,169 @@
                         <sections>
                             <tableViewSection id="DC2-fA-CVZ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yIe-5m-6cT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PVX-vw-OC9" imageView="9F2-qu-BJA" style="IBUITableViewCellStyleDefault" id="yIe-5m-6cT">
                                         <rect key="frame" x="0.0" y="214" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yIe-5m-6cT" id="YTs-TN-Unu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Lc-LOS">
-                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="更改昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PVX-vw-OC9">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="nickname">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="更改昵称">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="hKq-zF-cWm" kind="show" identifier="settingNickName" id="3P4-CP-hp4"/>
-                                                    </connections>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="nickname" id="9F2-qu-BJA">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstItem="yc4-Lc-LOS" firstAttribute="leading" secondItem="YTs-TN-Unu" secondAttribute="leading" constant="8" id="itd-in-WCN"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yc4-Lc-LOS" secondAttribute="trailing" id="zjr-FO-EFf"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="hKq-zF-cWm" kind="show" id="Gb2-0M-cuR"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zug-bx-6Sp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="fYO-eN-TPn" imageView="Tx5-K6-Cbk" style="IBUITableViewCellStyleDefault" id="Zug-bx-6Sp">
                                         <rect key="frame" x="0.0" y="258" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zug-bx-6Sp" id="gTu-eL-obi">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-D6-z9x">
-                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="设置头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYO-eN-TPn">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="headimage">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="设置头像">
-                                                                <attributes>
-                                                                    <color key="NSColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="PHF-Fv-wtr" kind="show" identifier="settingHeadImage" id="Rtd-mu-ur6"/>
-                                                    </connections>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="headimage" id="Tx5-K6-Cbk">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstItem="WYv-D6-z9x" firstAttribute="leading" secondItem="gTu-eL-obi" secondAttribute="leadingMargin" id="aqB-PT-X6e"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="WYv-D6-z9x" secondAttribute="trailing" id="tct-Lj-mkI"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="PHF-Fv-wtr" kind="show" id="NKh-kv-9fb"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bXZ-9D-QTF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="mNf-Zt-hFh" imageView="9Ts-ZT-bJK" style="IBUITableViewCellStyleDefault" id="bXZ-9D-QTF">
                                         <rect key="frame" x="0.0" y="302" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bXZ-9D-QTF" id="60e-kV-Jx5">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3k5-sg-XTq">
-                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="注销登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mNf-Zt-hFh">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="signout">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="注销登录">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="signout" id="9Ts-ZT-bJK">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3k5-sg-XTq" secondAttribute="trailing" id="X2T-9E-wsv"/>
-                                                <constraint firstItem="3k5-sg-XTq" firstAttribute="leading" secondItem="60e-kV-Jx5" secondAttribute="leadingMargin" id="jnV-NP-UiD"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <accessibility key="accessibilityConfiguration" label="ss"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="Cud-5L-cxK">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pZ5-Kg-REF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="QGO-ai-7bB" imageView="7K9-dI-NoY" style="IBUITableViewCellStyleDefault" id="pZ5-Kg-REF">
                                         <rect key="frame" x="0.0" y="346" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pZ5-Kg-REF" id="YrO-sf-5cu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-Ms-lU5">
-                                                    <rect key="frame" x="8" y="8" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="评价我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QGO-ai-7bB">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="rate">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="评价我们">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="rate" id="7K9-dI-NoY">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstItem="HrF-Ms-lU5" firstAttribute="leading" secondItem="YrO-sf-5cu" secondAttribute="leadingMargin" id="VoC-vc-Q82"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="HrF-Ms-lU5" secondAttribute="trailing" id="cVf-Ny-UlK"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TR3-Kc-zSz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="gVN-ch-VWb" imageView="opT-yf-CEj" style="IBUITableViewCellStyleDefault" id="TR3-Kc-zSz">
                                         <rect key="frame" x="0.0" y="390" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TR3-Kc-zSz" id="H6j-Q7-bd2">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-dN-AYt">
-                                                    <rect key="frame" x="8" y="8" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="关注我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gVN-ch-VWb">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="followus">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="关注我们">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="followus" id="opT-yf-CEj">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstItem="BDK-dN-AYt" firstAttribute="leading" secondItem="H6j-Q7-bd2" secondAttribute="leadingMargin" id="aHh-jU-4BA"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BDK-dN-AYt" secondAttribute="trailing" id="iyw-Z6-zIe"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tb9-Vq-iwp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="SFh-rp-C0c" imageView="865-xj-zIt" style="IBUITableViewCellStyleDefault" id="tb9-Vq-iwp">
                                         <rect key="frame" x="0.0" y="434" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tb9-Vq-iwp" id="UN5-7G-g6e">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvI-ni-9yf">
-                                                    <rect key="frame" x="8" y="9" width="304" height="25"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="官方网站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SFh-rp-C0c">
+                                                    <rect key="frame" x="52" y="0.0" width="253" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
-                                                    <state key="normal" image="homepage">
-                                                        <attributedString key="attributedTitle">
-                                                            <fragment content="官方网站">
-                                                                <attributes>
-                                                                    <font key="NSFont" size="18" name="PingFangSC-Regular"/>
-                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                        </attributedString>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="mUN-BG-by0" kind="show" id="F6c-0n-tjm"/>
-                                                    </connections>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="homepage" id="865-xj-zIt">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="fvI-ni-9yf" secondAttribute="trailing" id="FaB-uA-ldc"/>
-                                                <constraint firstItem="fvI-ni-9yf" firstAttribute="leading" secondItem="UN5-7G-g6e" secondAttribute="leadingMargin" id="b1h-5Q-bKg"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="mUN-BG-by0" kind="show" id="jtD-WN-EWC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
