@@ -80,10 +80,10 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    CGSize imageSize = image.size;
-    imageSize.height = 625;
-    imageSize.width = 413;
-    image = [self imageWithImage:image scaleToSize:imageSize];
+//    CGSize imageSize = image.size;
+//    imageSize.height = 625;
+//    imageSize.width = 413;
+//    image = [self imageWithImage:image scaleToSize:imageSize];
     
     self.headImageView.image = image;
     [picker dismissViewControllerAnimated:YES completion:nil];

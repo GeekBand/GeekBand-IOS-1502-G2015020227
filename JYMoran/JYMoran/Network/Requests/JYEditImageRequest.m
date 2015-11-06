@@ -41,6 +41,8 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    NSString *result = [[NSString alloc]initWithData:self.receivedData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", result);
     if ([_delegate respondsToSelector:@selector(editImageRequestSuccess:)]) {
         [_delegate editImageRequestSuccess:self];
     }
