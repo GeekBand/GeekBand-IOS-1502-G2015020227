@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "JYLoginAndRegisterViewController.h"
 #import "JYMyViewController.h"
+#import "JYSquareViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,13 @@
 @implementation AppDelegate
 
 - (void)loadMainViewWithController:(UIViewController *)controller {
+    // square
+    UIStoryboard *squareStoryboard = [UIStoryboard storyboardWithName:@"JYSquare" bundle:[NSBundle mainBundle]];
+    JYSquareViewController *squareVC = [squareStoryboard instantiateViewControllerWithIdentifier:@"SquareStoryboard"];
+    UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
+    
+    
+    // my
     UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"JYMy" bundle:[NSBundle mainBundle]];
 //
 //    UIViewController *squareVC = [[UIViewController alloc]init];
