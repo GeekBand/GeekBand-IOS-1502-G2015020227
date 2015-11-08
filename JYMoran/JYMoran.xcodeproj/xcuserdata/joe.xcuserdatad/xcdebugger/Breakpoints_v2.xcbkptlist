@@ -538,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/Controllers/Square/JYSquareViewController.m"
-            timestampString = "468662101.429466"
+            timestampString = "468678804.577086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -570,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/Controllers/Square/JYSquareViewController.m"
-            timestampString = "468648459.174215"
+            timestampString = "468678804.577086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-squareRequestSuccess:dictionary:"
             landmarkType = "5">
          </BreakpointContent>
@@ -602,11 +602,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/Controllers/Square/JYSquareViewController.m"
-            timestampString = "468648459.174215"
+            timestampString = "468678804.577086"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-squareRequestFailed:error:"
             landmarkType = "5">
          </BreakpointContent>

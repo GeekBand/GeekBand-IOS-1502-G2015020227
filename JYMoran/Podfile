@@ -5,5 +5,7 @@ platform :ios, '8.0'
 
 target 'JYMoran' do
 	pod 'SDWebImage', '~>3.7'
+	pod 'KxMenu'
+	pod 'MJRefresh'
 end
 

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KxMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JYMoran.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>32B24A591FDE00D7D163A0AEE6799F0F</key>
+		<key>251640C5EB4DCB3C87DF43A25949B2ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61B163A57AF28BBE1CF43AD3FBF8DD74</key>
+		<key>79F980F9F67B3DE91F682D4CC65C9DC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F06F49D64E04DCD9683D916034330CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>

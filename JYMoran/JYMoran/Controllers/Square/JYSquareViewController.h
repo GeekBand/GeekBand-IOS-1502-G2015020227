@@ -7,16 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "JYSquareRequest.h"
+#import "MJRefresh.h"
+#import "KxMenu.h"
 
-@interface JYSquareViewController : UIViewController <JYSquareRequestDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface JYSquareViewController : UIViewController <JYSquareRequestDelegate, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *addrArray;
 @property (nonatomic, strong) NSDictionary *dataDic;
-@property (weak, nonatomic) UIButton *titleButton;
+@property (nonatomic, strong) UIButton *titleButton;
 
 @property (nonatomic, strong) NSString *pic_url;
 @property (nonatomic, strong) NSString *pic_id;
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) NSMutableDictionary *locationDic;
 
 @end
