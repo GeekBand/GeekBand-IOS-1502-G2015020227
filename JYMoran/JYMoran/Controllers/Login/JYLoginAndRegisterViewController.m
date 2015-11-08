@@ -80,11 +80,11 @@
     if ([user.loginReturnMessage isEqualToString:@"Login success"]) {
         NSLog(@"登录成功，现在转换页面");
         AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        [appDelegate loadMainViewWithController:self];
         [JYGlobal shareGlobal].user = user;
         [JYGlobal shareGlobal].user.email = self.emailTextField.text;
         JYGetImage *getImage = [[JYGetImage alloc]init];
         [getImage sendGetImageRequest];
+        [appDelegate loadMainViewWithController:self];
     } else {
         NSLog(@"服务器错误:%@", user.loginReturnMessage);
     }

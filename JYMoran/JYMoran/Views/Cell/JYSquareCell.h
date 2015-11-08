@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JYSquareViewController.h"
+#import "UIImageView+WebCache.h"
 
-@interface JYSquareCell : UITableViewCell
+@interface JYSquareCell : UITableViewCell<UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic, strong) JYSquareViewController *squareVC;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (nonatomic, strong) NSArray *dataArr;
 
 @end

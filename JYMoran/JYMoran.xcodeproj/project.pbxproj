@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */; };
 		D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D01BDA7A1C00819469 /* JYLoginRequest.m */; };
 		D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D31BDA7EE100819469 /* JYUserModel.m */; };
 		D81417D71BDA815700819469 /* BLMultipartForm.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D61BDA815700819469 /* BLMultipartForm.m */; };
@@ -32,11 +33,18 @@
 		D8C32E111BED71EE008BE64B /* JYSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E101BED71EE008BE64B /* JYSquareCell.m */; };
 		D8C32E141BED7238008BE64B /* JYSquareCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E131BED7238008BE64B /* JYSquareCollectionCell.m */; };
 		D8C32E171BED745B008BE64B /* JYSquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E161BED745B008BE64B /* JYSquareViewController.m */; };
+		D8C32E1A1BED7A7A008BE64B /* JYSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E191BED7A7A008BE64B /* JYSquareRequest.m */; };
+		D8C32E1D1BED7B3F008BE64B /* JYSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */; };
+		D8C32E211BED81B9008BE64B /* JYPictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E201BED81B9008BE64B /* JYPictureModel.m */; };
+		D8C32E241BED8239008BE64B /* JYSquareRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C32E231BED8239008BE64B /* JYSquareRequestParser.m */; };
 		D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */; };
 		D8E790CB1BD7D06D00C24F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E790C91BD7D06D00C24F1F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585C32962F9224E39406A22D /* Pods-JYMoran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.debug.xcconfig"; sourceTree = "<group>"; };
+		9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYMoran.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.release.xcconfig"; sourceTree = "<group>"; };
 		D81417CF1BDA7A1C00819469 /* JYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginRequest.h; sourceTree = "<group>"; };
 		D81417D01BDA7A1C00819469 /* JYLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLoginRequest.m; sourceTree = "<group>"; };
 		D81417D21BDA7EE100819469 /* JYUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYUserModel.h; sourceTree = "<group>"; };
@@ -83,6 +91,14 @@
 		D8C32E131BED7238008BE64B /* JYSquareCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSquareCollectionCell.m; sourceTree = "<group>"; };
 		D8C32E151BED745B008BE64B /* JYSquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSquareViewController.h; sourceTree = "<group>"; };
 		D8C32E161BED745B008BE64B /* JYSquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSquareViewController.m; sourceTree = "<group>"; };
+		D8C32E181BED7A7A008BE64B /* JYSquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSquareRequest.h; sourceTree = "<group>"; };
+		D8C32E191BED7A7A008BE64B /* JYSquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSquareRequest.m; sourceTree = "<group>"; };
+		D8C32E1B1BED7B3F008BE64B /* JYSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSquareModel.h; sourceTree = "<group>"; };
+		D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSquareModel.m; sourceTree = "<group>"; };
+		D8C32E1F1BED81B9008BE64B /* JYPictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPictureModel.h; sourceTree = "<group>"; };
+		D8C32E201BED81B9008BE64B /* JYPictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPictureModel.m; sourceTree = "<group>"; };
+		D8C32E221BED8239008BE64B /* JYSquareRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSquareRequestParser.h; sourceTree = "<group>"; };
+		D8C32E231BED8239008BE64B /* JYSquareRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSquareRequestParser.m; sourceTree = "<group>"; };
 		D8E790BD1BD7CF8800C24F1F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8E790BE1BD7CF8800C24F1F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D8E790C81BD7D06D00C24F1F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,12 +110,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70FEBE75C95C26BBB7E2FA49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93E9CF0346318A0F56AD0080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585C32962F9224E39406A22D /* Pods-JYMoran.debug.xcconfig */,
+				B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D81417CB1BDA798800819469 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +151,8 @@
 				D81417D91BDA890000819469 /* JYLoginRequestParser.m */,
 				D81417E11BDCCF0900819469 /* JYRegisterRequestParser.h */,
 				D81417E21BDCCF0900819469 /* JYRegisterRequestParser.m */,
+				D8C32E221BED8239008BE64B /* JYSquareRequestParser.h */,
+				D8C32E231BED8239008BE64B /* JYSquareRequestParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -134,6 +170,8 @@
 				D8B1F5F41BEA4F690078A932 /* JYEditNickNameRequest.m */,
 				D8BC29E51BEB7FD000F71CCA /* JYEditImageRequest.h */,
 				D8BC29E61BEB7FD000F71CCA /* JYEditImageRequest.m */,
+				D8C32E181BED7A7A008BE64B /* JYSquareRequest.h */,
+				D8C32E191BED7A7A008BE64B /* JYSquareRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -152,6 +190,8 @@
 			children = (
 				D83A77771BD3D04F0001D893 /* JYMoran */,
 				D83A77761BD3D04F0001D893 /* Products */,
+				93E9CF0346318A0F56AD0080 /* Pods */,
+				70FEBE75C95C26BBB7E2FA49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +222,8 @@
 		D853BB5C1BD7D37800C1B6D0 /* Square */ = {
 			isa = PBXGroup;
 			children = (
+				D8C32E1B1BED7B3F008BE64B /* JYSquareModel.h */,
+				D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -267,6 +309,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		D8C32E1E1BED81A3008BE64B /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				D8C32E1F1BED81B9008BE64B /* JYPictureModel.h */,
+				D8C32E201BED81B9008BE64B /* JYPictureModel.m */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
 		D8E790B51BD7CF8800C24F1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +375,7 @@
 		D8E790C21BD7CF8800C24F1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8C32E1E1BED81A3008BE64B /* Picture */,
 				D853BB5C1BD7D37800C1B6D0 /* Square */,
 				D853BB5D1BD7D37800C1B6D0 /* My */,
 				D853BB5E1BD7D37800C1B6D0 /* Login */,
@@ -347,9 +399,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D83A778C1BD3D04F0001D893 /* Build configuration list for PBXNativeTarget "JYMoran" */;
 			buildPhases = (
+				48920AC47C54EC27A37CD12B /* Check Pods Manifest.lock */,
 				D83A77711BD3D04F0001D893 /* Sources */,
 				D83A77721BD3D04F0001D893 /* Frameworks */,
 				D83A77731BD3D04F0001D893 /* Resources */,
+				CA0F89F1327B7A6AD4A45F36 /* Embed Pods Frameworks */,
+				B42EE6C66033C618A3C0054D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +463,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48920AC47C54EC27A37CD12B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B42EE6C66033C618A3C0054D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA0F89F1327B7A6AD4A45F36 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D83A77711BD3D04F0001D893 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -415,6 +518,7 @@
 			files = (
 				D81417DA1BDA890000819469 /* JYLoginRequestParser.m in Sources */,
 				D8B1F5E91BE8E1090078A932 /* JYNickNameViewController.m in Sources */,
+				D8C32E241BED8239008BE64B /* JYSquareRequestParser.m in Sources */,
 				D8C32E0B1BED6F87008BE64B /* JYViewDetailController.m in Sources */,
 				D86B07941BE24C350028744F /* JYGlobal.m in Sources */,
 				D81417D71BDA815700819469 /* BLMultipartForm.m in Sources */,
@@ -428,12 +532,15 @@
 				D8C32E141BED7238008BE64B /* JYSquareCollectionCell.m in Sources */,
 				D81417DD1BDC8C5700819469 /* JYRegisterViewController.m in Sources */,
 				D8C32E111BED71EE008BE64B /* JYSquareCell.m in Sources */,
+				D8C32E1D1BED7B3F008BE64B /* JYSquareModel.m in Sources */,
 				D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */,
+				D8C32E1A1BED7A7A008BE64B /* JYSquareRequest.m in Sources */,
 				D8E790CB1BD7D06D00C24F1F /* main.m in Sources */,
 				D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */,
 				D8C32E171BED745B008BE64B /* JYSquareViewController.m in Sources */,
 				D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
+				D8C32E211BED81B9008BE64B /* JYPictureModel.m in Sources */,
 				D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,9 +630,11 @@
 		};
 		D83A778D1BD3D04F0001D893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585C32962F9224E39406A22D /* Pods-JYMoran.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "JYMoran/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yujiang.JYMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,9 +643,11 @@
 		};
 		D83A778E1BD3D04F0001D893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "JYMoran/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yujiang.JYMoran;
 				PRODUCT_NAME = "$(TARGET_NAME)";

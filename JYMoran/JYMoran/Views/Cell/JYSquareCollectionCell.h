@@ -10,4 +10,7 @@
 
 @interface JYSquareCollectionCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
+
 @end

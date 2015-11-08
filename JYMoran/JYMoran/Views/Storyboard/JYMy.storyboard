@@ -4,47 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Square-->
-        <scene sceneID="LhF-mf-w9j">
-            <objects>
-                <viewController title="Square" id="zYE-1K-EXH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="r6z-Jf-P9r"/>
-                        <viewControllerLayoutGuide type="bottom" id="gAp-1e-bni"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aUe-A8-xsC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="广场" image="square" id="sg8-nv-eGY"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ge-vE-qA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="385" y="444"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="ozC-Q3-Tkq">
-            <objects>
-                <tabBarController storyboardIdentifier="MyTabBar" id="lac-8E-6Kh" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Gir-Si-N8Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="zYE-1K-EXH" kind="relationship" relationship="viewControllers" id="eRQ-dT-Kow"/>
-                        <segue destination="uoo-as-Mqe" kind="relationship" relationship="viewControllers" id="T2M-Yf-Syf"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j2h-4K-jid" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-419" y="132"/>
-        </scene>
         <!--我的-->
         <scene sceneID="7gi-PA-IKT">
             <objects>
@@ -437,6 +396,7 @@
                 <navigationController storyboardIdentifier="MyStoryboard" title="MyNav" automaticallyAdjustsScrollViewInsets="NO" id="uoo-as-Mqe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="my" id="SOR-Bt-OXh"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="az0-ov-24Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -466,6 +426,5 @@
         <image name="nickname" width="22" height="22"/>
         <image name="rate" width="22" height="22"/>
         <image name="signout" width="22" height="22"/>
-        <image name="square" width="22" height="22"/>
     </resources>
 </document>

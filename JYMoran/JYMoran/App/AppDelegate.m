@@ -23,25 +23,20 @@
     // square
     UIStoryboard *squareStoryboard = [UIStoryboard storyboardWithName:@"JYSquare" bundle:[NSBundle mainBundle]];
     JYSquareViewController *squareVC = [squareStoryboard instantiateViewControllerWithIdentifier:@"SquareStoryboard"];
+//    squareVC.view.backgroundColor = [UIColor redColor];
     UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
-    
+    squareNav.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
+    squareNav.tabBarItem.title = @"广场";
+    squareNav.tabBarItem.image = [UIImage imageNamed:@"square"];
     
     // my
     UIStoryboard *myStoryboard = [UIStoryboard storyboardWithName:@"JYMy" bundle:[NSBundle mainBundle]];
-//
-//    UIViewController *squareVC = [[UIViewController alloc]init];
-//    UINavigationController *squareNav = [[UINavigationController alloc]initWithRootViewController:squareVC];
-//    squareNav.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
-//    squareNav.tabBarItem.title = @"广场";
-//    squareNav.tabBarItem.image = [UIImage imageNamed:@"square"];
-//    
-//    JYMyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyStoryboard"];
-//    myVC.tabBarItem.title = @"我的";
-//    myVC.tabBarItem.image = [UIImage imageNamed:@"my"];
+    JYMyViewController *myVC = [myStoryboard instantiateViewControllerWithIdentifier:@"MyStoryboard"];
+    myVC.tabBarItem.title = @"我的";
+    myVC.tabBarItem.image = [UIImage imageNamed:@"my"];
     
-//    self.tabBarController = [[UITabBarController alloc]init];
-    self.tabBarController = [myStoryboard instantiateViewControllerWithIdentifier:@"MyTabBar"];
-//    self.tabBarController.viewControllers = @[squareNav, myVC];
+    self.tabBarController = [[UITabBarController alloc]init];
+    self.tabBarController.viewControllers = @[squareNav, myVC];
     
     [controller presentViewController:self.tabBarController animated:YES completion:nil];
     
