@@ -24,7 +24,7 @@
     [form addValue:data forField:@"data"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url];
     request.HTTPMethod = @"POST";
-    request.HTTPBody = [form httpBody];
+    request.HTTPBody = [form httpBodyForImage];
     [request setValue:form.contentType forHTTPHeaderField:@"Content-Type"];
     self.urlConnection = [[NSURLConnection alloc]initWithRequest:request delegate:self startImmediately:YES];
 }

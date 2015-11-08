@@ -410,12 +410,12 @@
                   moduleName = "JYMoran"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Documents/GeekBand-IOS-1502-G2015020227/JYMoran/JYMoran/Controllers/Square/JYSquareViewController.m"
-                  timestampString = "468678805.726816"
+                  timestampString = "468680945.352291"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "152"
                   endingLineNumber = "152"
-                  offsetFromSymbolStart = "816">
+                  offsetFromSymbolStart = "749">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -425,12 +425,12 @@
                   moduleName = "JYMoran"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joe/Documents/GeekBand-IOS-1502-G2015020227/JYMoran/JYMoran/Controllers/Square/JYSquareViewController.m"
-                  timestampString = "468678805.72725"
+                  timestampString = "468680945.352798"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "152"
                   endingLineNumber = "152"
-                  offsetFromSymbolStart = "72">
+                  offsetFromSymbolStart = "67">
                </Location>
             </Locations>
          </BreakpointContent>
