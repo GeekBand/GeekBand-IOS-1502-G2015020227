@@ -42,6 +42,7 @@
     JYPictureModel *pictureModel = self.dataArr[indexPath.row];
     self.squareVC.pic_url = pictureModel.pic_link;
     self.squareVC.pic_id = pictureModel.pic_id;
+    [self.squareVC toCheckPicture];
 }
 
 - (void)awakeFromNib {

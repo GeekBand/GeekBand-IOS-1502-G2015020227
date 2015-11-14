@@ -25,4 +25,6 @@
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSMutableDictionary *locationDic;
 
+- (void)toCheckPicture;
+
 @end

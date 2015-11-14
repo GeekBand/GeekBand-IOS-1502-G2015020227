@@ -9,12 +9,22 @@
 #import "JYSquareViewController.h"
 #import "JYGlobal.h"
 #import "JYSquareCell.h"
+#import "JYViewDetailController.h"
 
 @interface JYSquareViewController ()
 
 @end
 
 @implementation JYSquareViewController
+
+- (void)toCheckPicture {
+    UIStoryboard *detailStoryboard = [UIStoryboard storyboardWithName:@"JYViewDetail" bundle:[NSBundle mainBundle]];
+    JYViewDetailController *detailVC = [detailStoryboard instantiateViewControllerWithIdentifier:@"ViewDetail"];
+    [detailVC.photoImage sd_setImageWithURL:[NSURL URLWithString:self.pic_url]];
+    detailVC.pic_id = self.pic_id;
+    detailVC.pic_url = self.pic_url;
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 
 - (void)requestAllData {
     NSDictionary *paramDic = @{@"user_id":[JYGlobal shareGlobal].user.userId, @"token":[JYGlobal shareGlobal].user.token,

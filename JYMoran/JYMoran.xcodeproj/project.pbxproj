@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95063BB61BF7232300F77DD6 /* JYViewDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95063BB51BF7232300F77DD6 /* JYViewDetail.storyboard */; };
+		95063BB91BF7277D00F77DD6 /* JYViewDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BB81BF7277D00F77DD6 /* JYViewDetailRequest.m */; };
+		95063BBF1BF7373A00F77DD6 /* JYViewDetailRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */; };
+		95063BC31BF73AF700F77DD6 /* JYViewDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BC21BF73AF700F77DD6 /* JYViewDetailModel.m */; };
+		95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */; };
 		B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */; };
 		D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D01BDA7A1C00819469 /* JYLoginRequest.m */; };
 		D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D31BDA7EE100819469 /* JYUserModel.m */; };
@@ -43,6 +48,15 @@
 
 /* Begin PBXFileReference section */
 		585C32962F9224E39406A22D /* Pods-JYMoran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.debug.xcconfig"; sourceTree = "<group>"; };
+		95063BB51BF7232300F77DD6 /* JYViewDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYViewDetail.storyboard; sourceTree = "<group>"; };
+		95063BB71BF7277D00F77DD6 /* JYViewDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYViewDetailRequest.h; sourceTree = "<group>"; };
+		95063BB81BF7277D00F77DD6 /* JYViewDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewDetailRequest.m; sourceTree = "<group>"; };
+		95063BBD1BF7373A00F77DD6 /* JYViewDetailRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYViewDetailRequestParser.h; sourceTree = "<group>"; };
+		95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewDetailRequestParser.m; sourceTree = "<group>"; };
+		95063BC11BF73AF700F77DD6 /* JYViewDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYViewDetailModel.h; sourceTree = "<group>"; };
+		95063BC21BF73AF700F77DD6 /* JYViewDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewDetailModel.m; sourceTree = "<group>"; };
+		95063BC41BF75F6000F77DD6 /* JYCommentListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCommentListCell.h; sourceTree = "<group>"; };
+		95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCommentListCell.m; sourceTree = "<group>"; };
 		9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYMoran.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.release.xcconfig"; sourceTree = "<group>"; };
 		D81417CF1BDA7A1C00819469 /* JYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginRequest.h; sourceTree = "<group>"; };
@@ -134,6 +148,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		95063BC01BF73AD200F77DD6 /* ViewDetail */ = {
+			isa = PBXGroup;
+			children = (
+				95063BC11BF73AF700F77DD6 /* JYViewDetailModel.h */,
+				95063BC21BF73AF700F77DD6 /* JYViewDetailModel.m */,
+			);
+			path = ViewDetail;
+			sourceTree = "<group>";
+		};
 		D81417CB1BDA798800819469 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +176,8 @@
 				D81417E21BDCCF0900819469 /* JYRegisterRequestParser.m */,
 				D8C32E221BED8239008BE64B /* JYSquareRequestParser.h */,
 				D8C32E231BED8239008BE64B /* JYSquareRequestParser.m */,
+				95063BBD1BF7373A00F77DD6 /* JYViewDetailRequestParser.h */,
+				95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -172,6 +197,8 @@
 				D8BC29E61BEB7FD000F71CCA /* JYEditImageRequest.m */,
 				D8C32E181BED7A7A008BE64B /* JYSquareRequest.h */,
 				D8C32E191BED7A7A008BE64B /* JYSquareRequest.m */,
+				95063BB71BF7277D00F77DD6 /* JYViewDetailRequest.h */,
+				95063BB81BF7277D00F77DD6 /* JYViewDetailRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -222,6 +249,7 @@
 		D853BB5C1BD7D37800C1B6D0 /* Square */ = {
 			isa = PBXGroup;
 			children = (
+				95063BC01BF73AD200F77DD6 /* ViewDetail */,
 				D8C32E1B1BED7B3F008BE64B /* JYSquareModel.h */,
 				D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */,
 			);
@@ -305,6 +333,8 @@
 				D8C32E101BED71EE008BE64B /* JYSquareCell.m */,
 				D8C32E121BED7238008BE64B /* JYSquareCollectionCell.h */,
 				D8C32E131BED7238008BE64B /* JYSquareCollectionCell.m */,
+				95063BC41BF75F6000F77DD6 /* JYCommentListCell.h */,
+				95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -333,6 +363,7 @@
 				D8C32E0C1BED718C008BE64B /* JYLoginAndRegister.storyboard */,
 				D8826DDE1BDFADF200026474 /* JYMy.storyboard */,
 				D8C32E061BED6D37008BE64B /* JYSquare.storyboard */,
+				95063BB51BF7232300F77DD6 /* JYViewDetail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -458,6 +489,7 @@
 				D853BB671BD7D6A100C1B6D0 /* Images.xcassets in Resources */,
 				D8C32E0D1BED718C008BE64B /* JYLoginAndRegister.storyboard in Resources */,
 				D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */,
+				95063BB61BF7232300F77DD6 /* JYViewDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,11 +559,15 @@
 				D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */,
 				D81417E01BDCC2CE00819469 /* JYRegisterRequest.m in Sources */,
 				D8BC29E71BEB7FD000F71CCA /* JYEditImageRequest.m in Sources */,
+				95063BB91BF7277D00F77DD6 /* JYViewDetailRequest.m in Sources */,
+				95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */,
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
+				95063BC31BF73AF700F77DD6 /* JYViewDetailModel.m in Sources */,
 				D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */,
 				D8C32E141BED7238008BE64B /* JYSquareCollectionCell.m in Sources */,
 				D81417DD1BDC8C5700819469 /* JYRegisterViewController.m in Sources */,
 				D8C32E111BED71EE008BE64B /* JYSquareCell.m in Sources */,
+				95063BBF1BF7373A00F77DD6 /* JYViewDetailRequestParser.m in Sources */,
 				D8C32E1D1BED7B3F008BE64B /* JYSquareModel.m in Sources */,
 				D8826DE21BDFAE9600026474 /* JYMyViewController.m in Sources */,
 				D8C32E1A1BED7A7A008BE64B /* JYSquareRequest.m in Sources */,
