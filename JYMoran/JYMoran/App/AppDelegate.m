@@ -10,10 +10,9 @@
 #import "JYLoginAndRegisterViewController.h"
 #import "JYMyViewController.h"
 #import "JYSquareViewController.h"
+#import "JYPublishViewController.h"
 
 @interface AppDelegate ()
-
-@property (nonatomic, strong) UITabBarController *tabBarController;
 
 @end
 
@@ -44,7 +43,65 @@
     
     UIButton *photoButton = [[UIButton alloc]initWithFrame:CGRectMake(viewWidth/2-60, -25, 120, 50)];
     [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
+    [photoButton addTarget:self action:@selector(photoButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.tabBarController.tabBar addSubview:photoButton];
+}
+
+- (void)photoButtonClicked {
+    UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:nil
+                                                      delegate:self
+                                             cancelButtonTitle:@"取消"
+                                        destructiveButtonTitle:nil
+                                             otherButtonTitles:@"拍照",@"从手机相册选择", nil];
+    [sheet showInView:self.tabBarController.view];
+
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    self.pickerController = [[UIImagePickerController alloc]init];
+    if (buttonIndex == 0) {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            self.pickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            self.pickerController.allowsEditing = NO;
+            self.pickerController.delegate = self;
+            [self.tabBarController presentViewController:self.pickerController animated:YES completion:nil];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"无法获取照相机" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
+    } else if (buttonIndex == 1) {
+        self.pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.pickerController.delegate = self;
+        [self.tabBarController presentViewController:self.pickerController animated:YES completion:nil];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    //    CGSize imageSize = image.size;
+    //    imageSize.height = 625;
+    //    imageSize.width = 413;
+    //    image = [self imageWithImage:image scaleToSize:imageSize];
+    
+    
+//    self.headImageView.image = image;
+
+    
+    UIStoryboard *publishStoryboard = [UIStoryboard storyboardWithName:@"JYPublish" bundle:[NSBundle mainBundle]];
+    JYPublishViewController *publishVC = [publishStoryboard instantiateViewControllerWithIdentifier:@"CMJ"];
+    publishVC.photoView.image = image;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    [self.tabBarController presentViewController:publishVC animated:YES completion:nil];
+    
+
+    
+    //    if (self.pickerController.sourceType == UIImagePickerControllerSourceTypeCamera) {
+    //        headImageController.headImageView.image = image;
+    //        [picker dismissViewControllerAnimated:YES completion:nil];
+    //    } else {
+    //        [picker dismissViewControllerAnimated:YES completion:nil];
+    //    }
 }
 
 - (void)loadLoginView {

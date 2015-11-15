@@ -12,6 +12,8 @@
 		95063BBF1BF7373A00F77DD6 /* JYViewDetailRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */; };
 		95063BC31BF73AF700F77DD6 /* JYViewDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BC21BF73AF700F77DD6 /* JYViewDetailModel.m */; };
 		95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */; };
+		95063BC81BF8574C00F77DD6 /* JYPublish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95063BC71BF8574C00F77DD6 /* JYPublish.storyboard */; };
+		95063BCB1BF8B15D00F77DD6 /* JYPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BCA1BF8B15D00F77DD6 /* JYPublishViewController.m */; };
 		B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */; };
 		D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D01BDA7A1C00819469 /* JYLoginRequest.m */; };
 		D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D31BDA7EE100819469 /* JYUserModel.m */; };
@@ -57,6 +59,9 @@
 		95063BC21BF73AF700F77DD6 /* JYViewDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYViewDetailModel.m; sourceTree = "<group>"; };
 		95063BC41BF75F6000F77DD6 /* JYCommentListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCommentListCell.h; sourceTree = "<group>"; };
 		95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCommentListCell.m; sourceTree = "<group>"; };
+		95063BC71BF8574C00F77DD6 /* JYPublish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYPublish.storyboard; sourceTree = "<group>"; };
+		95063BC91BF8B15D00F77DD6 /* JYPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishViewController.h; sourceTree = "<group>"; };
+		95063BCA1BF8B15D00F77DD6 /* JYPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishViewController.m; sourceTree = "<group>"; };
 		9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYMoran.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.release.xcconfig"; sourceTree = "<group>"; };
 		D81417CF1BDA7A1C00819469 /* JYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginRequest.h; sourceTree = "<group>"; };
@@ -278,6 +283,8 @@
 				D8C32E081BED6F5A008BE64B /* ViewDetail */,
 				D8C32E151BED745B008BE64B /* JYSquareViewController.h */,
 				D8C32E161BED745B008BE64B /* JYSquareViewController.m */,
+				95063BC91BF8B15D00F77DD6 /* JYPublishViewController.h */,
+				95063BCA1BF8B15D00F77DD6 /* JYPublishViewController.m */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -364,6 +371,7 @@
 				D8826DDE1BDFADF200026474 /* JYMy.storyboard */,
 				D8C32E061BED6D37008BE64B /* JYSquare.storyboard */,
 				95063BB51BF7232300F77DD6 /* JYViewDetail.storyboard */,
+				95063BC71BF8574C00F77DD6 /* JYPublish.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -489,6 +497,7 @@
 				D853BB671BD7D6A100C1B6D0 /* Images.xcassets in Resources */,
 				D8C32E0D1BED718C008BE64B /* JYLoginAndRegister.storyboard in Resources */,
 				D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */,
+				95063BC81BF8574C00F77DD6 /* JYPublish.storyboard in Resources */,
 				95063BB61BF7232300F77DD6 /* JYViewDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +583,7 @@
 				D8E790CB1BD7D06D00C24F1F /* main.m in Sources */,
 				D8E790C61BD7CF8800C24F1F /* AppDelegate.m in Sources */,
 				D8C32E171BED745B008BE64B /* JYSquareViewController.m in Sources */,
+				95063BCB1BF8B15D00F77DD6 /* JYPublishViewController.m in Sources */,
 				D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
 				D8C32E211BED81B9008BE64B /* JYPictureModel.m in Sources */,
