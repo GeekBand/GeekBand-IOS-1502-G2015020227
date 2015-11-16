@@ -19,11 +19,14 @@
 - (void)makePulishButton {
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width-65, 0, 50, 40)];
     button.backgroundColor = [UIColor whiteColor];
+    [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     button.alpha = 0.8;
     [button setTitle:@"发布" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(publishPhotoButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     button.layer.cornerRadius = 3.0;
     button.clipsToBounds = YES;
+//    button.tintColor = [UIColor blackColor];
+//    button.titleLabel.textColor = [UIColor blackColor];
     [self.navigationController.navigationBar addSubview:button];
 }
 
@@ -31,11 +34,34 @@
     
 }
 
+- (void)textViewDidChange:(UITextView *)textView {
+    if (textView.text.length > 25) {
+        [self.textView resignFirstResponder];
+    }
+    self.numberLabel.text = [NSString stringWithFormat:@"%lu/25", textView.text.length];
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    if ([textView.text isEqualToString:@"你想说的话"]) {
+        textView.text = @"";
+    }
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    if (textView.text.length < 1) {
+        textView.text = @"我想说的话";
+    }
+}
+
+- (void)touchDown:(id)sender {
+    [self.textView resignFirstResponder];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationController.navigationBar.backgroundColor = [[UIColor alloc]initWithRed:230/255.0 green:230/255.0 blue:58/255.0 alpha:1];
-    self.navigationController.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:230/255.0 blue:58/255.0 alpha:1];
+    self.navigationController.navigationBar.backgroundColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
+    self.navigationController.navigationBar.barTintColor = [[UIColor alloc]initWithRed:230/255.0 green:106/255.0 blue:58/255.0 alpha:1];
     [self.navigationController.navigationBar setAlpha:1.0];
     self.textView.delegate = self;
     
@@ -44,6 +70,8 @@
     titleLabel.text = @"发布照片";
     titleLabel.textColor = [UIColor whiteColor];
     [self.navigationController.navigationBar addSubview:titleLabel];
+    
+    [self makePulishButton];
 }
 
 - (void)didReceiveMemoryWarning {

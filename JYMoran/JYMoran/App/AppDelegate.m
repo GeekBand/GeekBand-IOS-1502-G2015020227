@@ -39,8 +39,8 @@
     
     [controller presentViewController:self.tabBarController animated:YES completion:nil];
     
+    // publish
     CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
-    
     UIButton *photoButton = [[UIButton alloc]initWithFrame:CGRectMake(viewWidth/2-60, -25, 120, 50)];
     [photoButton setImage:[UIImage imageNamed:@"publish"] forState:UIControlStateNormal];
     [photoButton addTarget:self action:@selector(photoButtonClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -66,7 +66,11 @@
             self.pickerController.delegate = self;
             [self.tabBarController presentViewController:self.pickerController animated:YES completion:nil];
         } else {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"无法获取照相机" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误"
+                                                           message:@"无法获取照相机"
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"确定"
+                                                 otherButtonTitles:nil];
             [alert show];
             return;
         }
@@ -86,15 +90,17 @@
     
     
 //    self.headImageView.image = image;
-
     
     UIStoryboard *publishStoryboard = [UIStoryboard storyboardWithName:@"JYPublish" bundle:[NSBundle mainBundle]];
     JYPublishViewController *publishVC = [publishStoryboard instantiateViewControllerWithIdentifier:@"CMJ"];
+    
+//    JYPublishViewController *publishVC = [publishStoryboard in
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:publishVC];
     publishVC.photoView.image = image;
     [picker dismissViewControllerAnimated:YES completion:nil];
-    [self.tabBarController presentViewController:publishVC animated:YES completion:nil];
-    
-
+    [self.tabBarController presentViewController:nav animated:YES completion:nil];
+//
+//
     
     //    if (self.pickerController.sourceType == UIImagePickerControllerSourceTypeCamera) {
     //        headImageController.headImageView.image = image;
