@@ -30,6 +30,16 @@
     [self.navigationController.navigationBar addSubview:button];
 }
 
+- (void)makeBackButton {
+    UIButton *backButton = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonClicked:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+}
+
+- (void)backButtonClicked:(id)sender {
+//    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)publishPhotoButtonClicked {
     
 }
@@ -72,6 +82,7 @@
     [self.navigationController.navigationBar addSubview:titleLabel];
     
     [self makePulishButton];
+    [self makeBackButton];
 }
 
 - (void)didReceiveMemoryWarning {
