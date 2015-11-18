@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface JYPublishViewController : UIViewController <UITextViewDelegate>
+@interface JYPublishViewController : UIViewController <UITextViewDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) NSMutableDictionary *dic;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 - (IBAction)touchDown:(id)sender;
 
 @end

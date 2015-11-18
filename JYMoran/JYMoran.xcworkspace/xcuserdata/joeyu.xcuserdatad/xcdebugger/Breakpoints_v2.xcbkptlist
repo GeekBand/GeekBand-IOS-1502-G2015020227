@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JYMoran/Controllers/Square/JYPublishViewController.m"
-            timestampString = "469375575.745578"
+            timestampString = "469550032.492939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-backButtonClicked:"
             landmarkType = "5">
          </BreakpointContent>

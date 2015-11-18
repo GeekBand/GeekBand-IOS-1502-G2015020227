@@ -14,6 +14,9 @@
 		95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */; };
 		95063BC81BF8574C00F77DD6 /* JYPublish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95063BC71BF8574C00F77DD6 /* JYPublish.storyboard */; };
 		95063BCB1BF8B15D00F77DD6 /* JYPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BCA1BF8B15D00F77DD6 /* JYPublishViewController.m */; };
+		95063BCE1BFCA6F600F77DD6 /* JYPublishRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BCD1BFCA6F600F77DD6 /* JYPublishRequest.m */; };
+		95063BD11BFCACB600F77DD6 /* JYPublishRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */; };
+		95063BD41BFCACE100F77DD6 /* JYPublishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BD31BFCACE100F77DD6 /* JYPublishModel.m */; };
 		B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */; };
 		D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D01BDA7A1C00819469 /* JYLoginRequest.m */; };
 		D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D31BDA7EE100819469 /* JYUserModel.m */; };
@@ -62,6 +65,12 @@
 		95063BC71BF8574C00F77DD6 /* JYPublish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JYPublish.storyboard; sourceTree = "<group>"; };
 		95063BC91BF8B15D00F77DD6 /* JYPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishViewController.h; sourceTree = "<group>"; };
 		95063BCA1BF8B15D00F77DD6 /* JYPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishViewController.m; sourceTree = "<group>"; };
+		95063BCC1BFCA6F600F77DD6 /* JYPublishRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishRequest.h; sourceTree = "<group>"; };
+		95063BCD1BFCA6F600F77DD6 /* JYPublishRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishRequest.m; sourceTree = "<group>"; };
+		95063BCF1BFCACB600F77DD6 /* JYPublishRequestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishRequestParser.h; sourceTree = "<group>"; };
+		95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishRequestParser.m; sourceTree = "<group>"; };
+		95063BD21BFCACE100F77DD6 /* JYPublishModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishModel.h; sourceTree = "<group>"; };
+		95063BD31BFCACE100F77DD6 /* JYPublishModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishModel.m; sourceTree = "<group>"; };
 		9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYMoran.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.release.xcconfig"; sourceTree = "<group>"; };
 		D81417CF1BDA7A1C00819469 /* JYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginRequest.h; sourceTree = "<group>"; };
@@ -183,6 +192,8 @@
 				D8C32E231BED8239008BE64B /* JYSquareRequestParser.m */,
 				95063BBD1BF7373A00F77DD6 /* JYViewDetailRequestParser.h */,
 				95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */,
+				95063BCF1BFCACB600F77DD6 /* JYPublishRequestParser.h */,
+				95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -204,6 +215,8 @@
 				D8C32E191BED7A7A008BE64B /* JYSquareRequest.m */,
 				95063BB71BF7277D00F77DD6 /* JYViewDetailRequest.h */,
 				95063BB81BF7277D00F77DD6 /* JYViewDetailRequest.m */,
+				95063BCC1BFCA6F600F77DD6 /* JYPublishRequest.h */,
+				95063BCD1BFCA6F600F77DD6 /* JYPublishRequest.m */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -257,6 +270,8 @@
 				95063BC01BF73AD200F77DD6 /* ViewDetail */,
 				D8C32E1B1BED7B3F008BE64B /* JYSquareModel.h */,
 				D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */,
+				95063BD21BFCACE100F77DD6 /* JYPublishModel.h */,
+				95063BD31BFCACE100F77DD6 /* JYPublishModel.m */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -569,10 +584,13 @@
 				D81417E01BDCC2CE00819469 /* JYRegisterRequest.m in Sources */,
 				D8BC29E71BEB7FD000F71CCA /* JYEditImageRequest.m in Sources */,
 				95063BB91BF7277D00F77DD6 /* JYViewDetailRequest.m in Sources */,
+				95063BD41BFCACE100F77DD6 /* JYPublishModel.m in Sources */,
 				95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */,
+				95063BD11BFCACB600F77DD6 /* JYPublishRequestParser.m in Sources */,
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
 				95063BC31BF73AF700F77DD6 /* JYViewDetailModel.m in Sources */,
 				D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */,
+				95063BCE1BFCA6F600F77DD6 /* JYPublishRequest.m in Sources */,
 				D8C32E141BED7238008BE64B /* JYSquareCollectionCell.m in Sources */,
 				D81417DD1BDC8C5700819469 /* JYRegisterViewController.m in Sources */,
 				D8C32E111BED71EE008BE64B /* JYSquareCell.m in Sources */,

@@ -7,8 +7,10 @@
 //
 
 #import "JYPublishViewController.h"
+#import "JYPublishRequest.h"
+#import "JYGlobal.h"
 
-@interface JYPublishViewController () {
+@interface JYPublishViewController () <JYPublishRequestDelegate> {
     UILabel *titleLabel;
 }
 
@@ -31,7 +33,10 @@
 }
 
 - (void)makeBackButton {
-    UIButton *backButton = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backButtonClicked:)];
+    UIButton *backButton = [[UIBarButtonItem alloc]initWithTitle:@"返回"
+                                                           style:UIBarButtonItemStylePlain
+                                                          target:self
+                                                          action:@selector(backButtonClicked:)];
     self.navigationItem.leftBarButtonItem = backButton;
 }
 
@@ -40,7 +45,91 @@
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)getLatitudeAndLongitude {
+    self.locationManager = [[CLLocationManager alloc]init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    self.locationManager.distanceFilter = 1000.0f;
+    if ([[[UIDevice currentDevice] systemVersion]floatValue] >= 8.0) {
+        [_locationManager requestWhenInUseAuthorization];
+    }
+    if ([CLLocationManager locationServicesEnabled]) {
+        [self.locationManager startUpdatingLocation];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"定位失败" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
+        [alert show];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    self.dic = [NSMutableDictionary dictionary];
+    NSString *latitudeString = [NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
+    NSString *longitudeString = [NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
+    [self.dic setValue:latitudeString forKey:@"latitude"];
+    [self.dic setValue:longitudeString forKey:@"longtitude"];
+    CLLocationDegrees latitude = newLocation.coordinate.latitude;
+    CLLocationDegrees longitude = newLocation.coordinate.longitude;
+    CLLocation *location = [[CLLocation alloc]initWithLatitude:latitude longitude:longitude];
+    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if (!error && [placemarks count] > 0) {
+            NSDictionary *dict = [[placemarks objectAtIndex:0] addressDictionary];
+            // TODO:
+            NSString *locationLabelText = dict[@"Name"];
+            
+        } else {
+            NSLog(@"Error: %@", error);
+        }
+    }];
+    [manager stopUpdatingLocation];
+}
+
+- (void)makeLocation {
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+        NSString *latitude = [NSString stringWithFormat:@"l=%@", [self.dic valueForKey:@"latitude"]];
+        NSString *latitudeWithComma = [latitude stringByAppendingString:@"%2C"];
+        NSString *args =[NSString stringWithFormat:@"%@%@", latitudeWithComma, [self.dic valueForKey:@"longitude"]];
+        NSString *url = @"http://apis.baidu.com/3023/geo/address";
+        [self request:url withHTTPArgs:args];
+    }];
+    
+    [queue addOperation:operation];
+}
+
+//c5ee8b689b6ede2a9db717cc04ca48d5
+- (void)request:(NSString *)httpURL withHTTPArgs:(NSString *)httpArgs {
+    
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    NSLog(@"Error: %@", error);
+}
+
 - (void)publishPhotoButtonClicked {
+    if ([self.textView.text isEqualToString:@"你想说的话"]) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil
+                                                       message:@"请写上你的留言"
+                                                      delegate:self
+                                             cancelButtonTitle:@"确定"
+                                             otherButtonTitles:nil];
+        [alert show];
+    } else {
+        NSData *data = UIImageJPEGRepresentation(self.photoView.image, 0.00001);
+        JYUserModel *user = [JYGlobal shareGlobal].user;
+        JYPublishRequest *request = [[JYPublishRequest alloc]init];
+//        [request sendPublishRequestWithUserId:user.userId
+// token:user.token longitude:[self.di] latitude:<#(NSString *)#> title:<#(NSString *)#> data:<#(NSData *)#> location:<#(NSString *)#> delegate:<#(id<JYPublishRequestDelegate>)#>]
+        
+    }
+}
+
+-(void)requestSuccess:(JYPublishRequest *)request picId:(NSString *)picId {
+    
+}
+
+- (void)requestFailed:(JYPublishRequest *)request error:(NSError *)error {
     
 }
 
@@ -83,6 +172,8 @@
     
     [self makePulishButton];
     [self makeBackButton];
+    
+    [self getLatitudeAndLongitude];
 }
 
 - (void)didReceiveMemoryWarning {
