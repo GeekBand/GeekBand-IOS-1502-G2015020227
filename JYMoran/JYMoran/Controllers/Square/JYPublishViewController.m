@@ -301,7 +301,7 @@
 
 - (IBAction)locationButtonClicked:(id)sender {
     [self makeLocation];
-    [self makeTableView];
+//    [self makeTableView];
 }
 
 - (void)touchDown:(id)sender {
