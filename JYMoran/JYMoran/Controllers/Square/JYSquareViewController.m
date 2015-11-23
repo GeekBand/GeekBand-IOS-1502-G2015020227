@@ -93,26 +93,26 @@
     [super viewDidLoad];
     
     // location
-    self.locationDic = [NSMutableDictionary dictionary];
-    self.locationManager = [[CLLocationManager alloc]init];
-    self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    self.locationManager.distanceFilter = 1000.0f;
-    
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 8.0) {
-        [_locationManager requestWhenInUseAuthorization];
-    }
-    
-    if ([CLLocationManager locationServicesEnabled]) {
-        [self.locationManager startUpdatingLocation];
-    } else {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误"
-                                                       message:@"定位错误"
-                                                      delegate:self
-                                             cancelButtonTitle:@"确定"
-                                             otherButtonTitles:@"取消", nil];
-        [alert show];
-    }
+//    self.locationDic = [NSMutableDictionary dictionary];
+//    self.locationManager = [[CLLocationManager alloc]init];
+//    self.locationManager.delegate = self;
+//    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    self.locationManager.distanceFilter = 1000.0f;
+//    
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 8.0) {
+//        [_locationManager requestWhenInUseAuthorization];
+//    }
+//    
+//    if ([CLLocationManager locationServicesEnabled]) {
+//        [self.locationManager startUpdatingLocation];
+//    } else {
+//        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误"
+//                                                       message:@"定位错误"
+//                                                      delegate:self
+//                                             cancelButtonTitle:@"确定"
+//                                             otherButtonTitles:@"取消", nil];
+//        [alert show];
+//    }
     
     // NavigationBar settings
     self.titleButton = [UIButton buttonWithType:UIButtonTypeCustom];

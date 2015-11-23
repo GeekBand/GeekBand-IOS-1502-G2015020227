@@ -22,17 +22,20 @@
     } else {
         if ([[jsonDic class] isSubclassOfClass:[NSDictionary class]]) {
             id data = [[jsonDic valueForKey:@"data"] allValues];
+            
+            JYSquareRequestParser *weakSelf = self;
+            
             for (id dic in data) {
-                self.addrArray = [NSMutableArray array];
-                self.pictureArrary = [NSMutableArray array];
+                weakSelf.addrArray = [NSMutableArray array];
+                weakSelf.pictureArrary = [NSMutableArray array];
                 JYSquareModel *squareModel = [[JYSquareModel alloc]init];
                 [squareModel setValuesForKeysWithDictionary:dic[@"node"]];
                 for (id picDict in dic[@"pic"]) {
                     JYPictureModel *picModel = [[JYPictureModel alloc]init];
                     [picModel setValuesForKeysWithDictionary:picDict];
-                    [self.pictureArrary addObject:picModel];
+                    [weakSelf.pictureArrary addObject:picModel];
                 }
-                [self.addrArray addObject:squareModel];
+                [weakSelf.addrArray addObject:squareModel];
                 [dictionary setObject:_pictureArrary forKey:_addrArray];
             }
         }

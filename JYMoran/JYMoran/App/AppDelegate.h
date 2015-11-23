@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIImagePickerControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic, strong) UITabBarController *tabBarController;
-@property (strong, nonatomic) UIImagePickerController *pickerController;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 - (void)loadMainViewWithController:(UIViewController *)controller;
 - (void)loadLoginView;

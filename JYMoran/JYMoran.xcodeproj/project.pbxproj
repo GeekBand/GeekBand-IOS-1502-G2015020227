@@ -17,6 +17,10 @@
 		95063BCE1BFCA6F600F77DD6 /* JYPublishRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BCD1BFCA6F600F77DD6 /* JYPublishRequest.m */; };
 		95063BD11BFCACB600F77DD6 /* JYPublishRequestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */; };
 		95063BD41BFCACE100F77DD6 /* JYPublishModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BD31BFCACE100F77DD6 /* JYPublishModel.m */; };
+		95063BD71C01EDF200F77DD6 /* JYLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BD61C01EDF200F77DD6 /* JYLocationModel.m */; };
+		95063BE11C01F41100F77DD6 /* JYPublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95063BDF1C01F41100F77DD6 /* JYPublishCell.m */; };
+		95063BE21C01F41100F77DD6 /* JYPublishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95063BE01C01F41100F77DD6 /* JYPublishCell.xib */; };
+		95C578E21C03698900BCE4C2 /* JYLocationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C578E11C03698900BCE4C2 /* JYLocationParser.m */; };
 		B8A9B349CFA2339E26D53F0A /* libPods-JYMoran.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */; };
 		D81417D11BDA7A1C00819469 /* JYLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D01BDA7A1C00819469 /* JYLoginRequest.m */; };
 		D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D81417D31BDA7EE100819469 /* JYUserModel.m */; };
@@ -71,6 +75,13 @@
 		95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishRequestParser.m; sourceTree = "<group>"; };
 		95063BD21BFCACE100F77DD6 /* JYPublishModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishModel.h; sourceTree = "<group>"; };
 		95063BD31BFCACE100F77DD6 /* JYPublishModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishModel.m; sourceTree = "<group>"; };
+		95063BD51C01EDF200F77DD6 /* JYLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLocationModel.h; sourceTree = "<group>"; };
+		95063BD61C01EDF200F77DD6 /* JYLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLocationModel.m; sourceTree = "<group>"; };
+		95063BDE1C01F41100F77DD6 /* JYPublishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYPublishCell.h; sourceTree = "<group>"; };
+		95063BDF1C01F41100F77DD6 /* JYPublishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYPublishCell.m; sourceTree = "<group>"; };
+		95063BE01C01F41100F77DD6 /* JYPublishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JYPublishCell.xib; sourceTree = "<group>"; };
+		95C578E01C03698900BCE4C2 /* JYLocationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLocationParser.h; sourceTree = "<group>"; };
+		95C578E11C03698900BCE4C2 /* JYLocationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYLocationParser.m; sourceTree = "<group>"; };
 		9F04DC2A1388FE0DA4796C44 /* libPods-JYMoran.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYMoran.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67610A654E66561870921E4 /* Pods-JYMoran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYMoran.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYMoran/Pods-JYMoran.release.xcconfig"; sourceTree = "<group>"; };
 		D81417CF1BDA7A1C00819469 /* JYLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYLoginRequest.h; sourceTree = "<group>"; };
@@ -194,6 +205,8 @@
 				95063BBE1BF7373A00F77DD6 /* JYViewDetailRequestParser.m */,
 				95063BCF1BFCACB600F77DD6 /* JYPublishRequestParser.h */,
 				95063BD01BFCACB600F77DD6 /* JYPublishRequestParser.m */,
+				95C578E01C03698900BCE4C2 /* JYLocationParser.h */,
+				95C578E11C03698900BCE4C2 /* JYLocationParser.m */,
 			);
 			path = Parsers;
 			sourceTree = "<group>";
@@ -272,6 +285,8 @@
 				D8C32E1C1BED7B3F008BE64B /* JYSquareModel.m */,
 				95063BD21BFCACE100F77DD6 /* JYPublishModel.h */,
 				95063BD31BFCACE100F77DD6 /* JYPublishModel.m */,
+				95063BD51C01EDF200F77DD6 /* JYLocationModel.h */,
+				95063BD61C01EDF200F77DD6 /* JYLocationModel.m */,
 			);
 			path = Square;
 			sourceTree = "<group>";
@@ -357,6 +372,9 @@
 				D8C32E131BED7238008BE64B /* JYSquareCollectionCell.m */,
 				95063BC41BF75F6000F77DD6 /* JYCommentListCell.h */,
 				95063BC51BF75F6000F77DD6 /* JYCommentListCell.m */,
+				95063BDE1C01F41100F77DD6 /* JYPublishCell.h */,
+				95063BDF1C01F41100F77DD6 /* JYPublishCell.m */,
+				95063BE01C01F41100F77DD6 /* JYPublishCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -481,6 +499,11 @@
 					D83A77741BD3D04F0001D893 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = FE9HS7G7GW;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -511,6 +534,7 @@
 				D8C32E071BED6D37008BE64B /* JYSquare.storyboard in Resources */,
 				D853BB671BD7D6A100C1B6D0 /* Images.xcassets in Resources */,
 				D8C32E0D1BED718C008BE64B /* JYLoginAndRegister.storyboard in Resources */,
+				95063BE21C01F41100F77DD6 /* JYPublishCell.xib in Resources */,
 				D8826DDF1BDFADF200026474 /* JYMy.storyboard in Resources */,
 				95063BC81BF8574C00F77DD6 /* JYPublish.storyboard in Resources */,
 				95063BB61BF7232300F77DD6 /* JYViewDetail.storyboard in Resources */,
@@ -587,6 +611,7 @@
 				95063BD41BFCACE100F77DD6 /* JYPublishModel.m in Sources */,
 				95063BC61BF75F6000F77DD6 /* JYCommentListCell.m in Sources */,
 				95063BD11BFCACB600F77DD6 /* JYPublishRequestParser.m in Sources */,
+				95C578E21C03698900BCE4C2 /* JYLocationParser.m in Sources */,
 				D81417E31BDCCF0900819469 /* JYRegisterRequestParser.m in Sources */,
 				95063BC31BF73AF700F77DD6 /* JYViewDetailModel.m in Sources */,
 				D81417D41BDA7EE100819469 /* JYUserModel.m in Sources */,
@@ -604,8 +629,10 @@
 				95063BCB1BF8B15D00F77DD6 /* JYPublishViewController.m in Sources */,
 				D8B1F5F21BEA41E50078A932 /* JYGetImage.m in Sources */,
 				D853BB721BD7DE9400C1B6D0 /* JYLoginAndRegisterViewController.m in Sources */,
+				95063BE11C01F41100F77DD6 /* JYPublishCell.m in Sources */,
 				D8C32E211BED81B9008BE64B /* JYPictureModel.m in Sources */,
 				D8B1F5EC1BE8E1D90078A932 /* JYHeadImageViewController.m in Sources */,
+				95063BD71C01EDF200F77DD6 /* JYLocationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
